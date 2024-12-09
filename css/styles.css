@@ -2,6 +2,7 @@
     --black: #222222;
     --beige: #F1F0EB;
     --midnight: #535366;
+    --test: #424259;
 }
 
 h1{}
@@ -13,3 +14,14 @@ h3{}
 h4{}
 
 p{}
+
+.hero-name {
+    font-size: 5rem;
+    width: 50%;
+    color: var(--test);
+}
+.hero-intro {
+    font-size: 3rem;
+    width: 50%;
+    color: var(--midnight);
+}
