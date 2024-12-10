@@ -1,0 +1,147 @@
+@import url(./styles.css);
+
+.hero-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+}
+
+
+
+.hero-left {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero-left h1, .hero-left p, .hero-left .scrolldown-icon ion-icon {
+    margin: 0 1rem;
+}
+
+
+.hero-divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0.5rem 0;
+}
+
+.homepage-intro {
+    padding-top: 0.5rem;
+    margin: 0 10px;
+}
+
+.scrolldown-icon {
+    display: flex;
+    justify-content: center;
+}
+.scrolldown-icon ion-icon {
+    font-size: 32px;
+    align-items: end;
+    color: var(--black);
+}
+
+.hero-right {
+}
+
+.hero-right img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/*  */
+.component {
+    border-top: 1px solid var(--black);
+}
+
+.component ion-icon{
+    padding-left: 0.5rem;
+}
+
+
+.component-container {
+    margin: 0 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.component-title {
+    display: flex; 
+    align-items: center;
+}
+
+.component-content {
+    margin: 0 10px;
+    padding: 2rem 0;
+}
+
+.mission-intro {
+    width: 80%;
+}
+
+.footer-content {
+    padding-bottom: 1rem;
+}
+
+.footer-content {
+    font-size: 1rem;
+    font-family: var(--book);
+}
+
+
+@media (min-width: 768px) {
+    
+}
+
+
+@media (min-width: 1024px) {
+    .hero-right img {
+        max-height: 700px;
+    }
+    
+}
+
+
+@media (min-width: 1280px) {
+    .hero-section {
+        flex-direction: row;
+        padding-top: 0;
+    }
+    .hero-left {
+        width: 50%;
+        padding-top: 4.5rem;
+    }
+    .hero-right{
+        width: 50%;
+    }
+    .hero-right img {
+        max-height: inherit;
+        height: 100vh;
+    }
+    .homepage-intro {
+        width: 80%;
+        text-wrap: pretty;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .scrolldown-icon ion-icon {
+        font-size: 64px;
+    }
+    
+}
+
+
+@media (min-width: 2560px) {
+    .hero-section {
+        padding-top: 0;
+    }
+}
