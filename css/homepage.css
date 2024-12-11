@@ -18,7 +18,7 @@
 }
 
 .hero-left h1, .hero-left p, .hero-left .scrolldown-icon ion-icon {
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
 
@@ -95,6 +95,14 @@
     font-family: var(--book);
 }
 
+.footer-closingtag p {
+    font-size: 1rem;
+}
+
+.slogan p {
+    font-size: 1rem;
+    color: var(--beige);
+}
 
 @media (min-width: 768px) {
     

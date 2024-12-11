@@ -35,9 +35,9 @@ nav {
     justify-content: space-between;
     padding: 1rem 1rem;
     padding-top: 1.25rem;
-    background-color: #FFF;
+    background-color: var(--black);
     z-index: 100;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid var(--beige); */
 }
 
 nav.logo {
@@ -50,7 +50,10 @@ nav .logo img {
     width: 40%;
 }
 
-.website-content {
+nav ion-icon {
+    color: var(--beige);
+}
+/* .website-content {
     position: absolute;
     top: 0;
     width: 100%;
@@ -59,7 +62,7 @@ nav .logo img {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     z-index: 0;
-}
+} */
 
 .website-content h1 {
     font-size: 80px;
@@ -94,7 +97,7 @@ h1.header {
     top: 0;
     width: 100%;
     padding: 1rem;
-    background: var(--black);
+    background-color: var(--black);
     pointer-events: none;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     z-index: 1000 !important;

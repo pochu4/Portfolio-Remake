@@ -9,6 +9,10 @@
     --light: 'Neue Montreal Light', sans;
 }
 
+body {
+    line-height: 1.1;
+}
+
 h1 {
     font-family: var(--medium);
     font-size: 3.5rem;
@@ -27,9 +31,19 @@ h3 {
     color: var(--black);
 }
 
-h4 {}
+h4 {
+    font-family: var(--medium);
+    font-size: 2rem;
+    color: var(--black);
+}
 
-p {}
+p {
+    font-family: var(--book);
+    font-size: 1.25rem;
+    color: var(--black);
+}
+
+
 
 a {
     text-decoration: none;
@@ -43,6 +57,16 @@ button {
     border: none;
     font-family: var(--book);
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.about-intro {
+    font-family: var(--medium);
+}
+
+.about-text{
+    margin: 1rem 0;
+    width: 100%;
 }
 
 
@@ -106,7 +130,9 @@ button {
 
     h4 {}
 
-    p {}
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -127,13 +153,18 @@ button {
 
     h4 {}
 
-    p {}
+    p {
+        font-size: 1.75rem;
+    }
 
     .email-container {
         width: 40%;
     }
     .socials-container{
         width: 40%;
+    }
+    .about-text {
+        width: 90%;
     }
 }
 
