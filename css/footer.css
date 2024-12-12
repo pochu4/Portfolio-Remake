@@ -1,0 +1,63 @@
+@import url(styles.css);
+
+.email-container {
+    width: 80%;
+}
+.socials-container {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.email-container h3 {
+    font-family: var(--medium);
+}
+.email-tagline {
+    text-align: end;
+    font-family: var(--light);
+    font-size: 1.125rem;
+}
+
+
+.social-link a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--book);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-link ion-icon {
+    transform: rotate(45deg);
+    font-size: 24px;
+    color: var(--black);
+}
+
+.footer-closingtag {
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.social-link a:hover {
+    color: var(--midnight);
+    font-family: var(--medium);
+}
+
+
+.footer-content {
+    padding-bottom: 1rem;
+}
+
+.footer-content {
+    font-size: 1rem;
+    font-family: var(--book);
+}
+
+.footer-closingtag p {
+    font-size: 1rem;
+}
+
+.slogan p {
+    font-size: 1rem;
+    color: var(--beige);
+}

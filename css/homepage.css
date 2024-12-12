@@ -60,7 +60,7 @@
 }
 
 .component ion-icon{
-    padding-left: 0.5rem;
+    padding: 0 0.5rem;
 }
 
 
@@ -84,24 +84,6 @@
 
 .mission-intro {
     width: 80%;
-}
-
-.footer-content {
-    padding-bottom: 1rem;
-}
-
-.footer-content {
-    font-size: 1rem;
-    font-family: var(--book);
-}
-
-.footer-closingtag p {
-    font-size: 1rem;
-}
-
-.slogan p {
-    font-size: 1rem;
-    color: var(--beige);
 }
 
 @media (min-width: 768px) {

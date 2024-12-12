@@ -153,6 +153,7 @@ h1.header {
 
 .menu-link {
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .menu-link a {
@@ -234,10 +235,6 @@ h1.header {
 
     .menu-cols {
         display: block;
-    }
-
-    .video-preview {
-        height: 125px;
     }
 
     .menu-link a {
