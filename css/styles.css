@@ -3,7 +3,7 @@
 :root {
     --black: #222222;
     --beige: #F1F0EB;
-    --midnight: #535366;
+    --midnight: #223843;
     --medium: 'Neue Montreal Medium', sans;
     --book: 'Neue Montreal Reg', sans;
     --light: 'Neue Montreal Light', sans;
@@ -87,7 +87,7 @@ button {
 
 .card-image {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
     /* Ensures the image maintains its aspect ratio */
     transition: transform 0.5s ease;
@@ -134,7 +134,8 @@ button {
 
 .card-content_row1 ion-icon {
     font-size: 12px;
-    color: var(--midnight);
+    /* color: var(--midnight); */
+    color: var(--black);
 
 }
 
@@ -153,7 +154,7 @@ button {
 
 .cardText-type {
     font-size: 1rem;
-    color: var(--midnight);
+    /* color: var(--midnight); */
 }
 
 .cardText-intro {
@@ -215,8 +216,8 @@ button {
 @media (min-width: 1024px) {
     .card-container {
         display: flex;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-between;
+        gap: 1.5rem;
     }
 
     .card2-mobile {
@@ -224,7 +225,7 @@ button {
     }
 
     .card {
-        max-width: 50%;
+        width: 50%;
         max-height: 550px;
     }
 
@@ -241,7 +242,9 @@ button {
         font-size: 2rem;
     }
 
-    h3 {}
+    h3 {
+        font-size: 2.25rem;
+    }
 
     h4 {}
 
@@ -258,7 +261,6 @@ button {
         overflow: hidden;
         width: 50%;
         height: 600px;
-        margin-bottom: 1rem;
     }
 
     .card-image {
@@ -278,6 +280,23 @@ button {
         z-index: 0;
         text-align: center;
         padding: 1rem;
+        
+    }
+
+    .roamCardBG{
+        background-color: #FFD398;
+    }
+
+    .virtusCardBG{
+        background-color: #f3eb9f;
+    }
+
+    .epureCardBG{
+        background-color: #DFD7C1;
+    }
+
+    .macadeCardBG{
+        background-color: #A4B6AF;
     }
 
     .card:hover .card-image {
@@ -302,5 +321,12 @@ button {
 
     h2 {
         font-size: 3rem;
+    }
+
+
+
+    .card {
+        height: 700px;
+        max-height: 700px;
     }
 }

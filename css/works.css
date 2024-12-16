@@ -1,0 +1,27 @@
+@import url(styles.css);
+
+.works-spacer {
+    padding-bottom: 1.5rem;
+    margin-bottom: 0;
+}
+
+.works-featured {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.works-featured_title {
+    display: flex;
+    align-items: center;
+}
+
+.works-featured_title ion-icon {
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .works-featured {
+        margin: 0 1.5rem 1rem 1.5rem;
+    }
+}
