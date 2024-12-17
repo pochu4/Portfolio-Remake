@@ -1,4 +1,5 @@
 @import url(styles.css);
+@import url(projects.css);
 
 .works-spacer {
     padding-bottom: 1.5rem;
@@ -18,10 +19,58 @@
 
 .works-featured_title ion-icon {
     padding: 0 0.5rem;
+    color: var(--black);
+}
+
+/* Featured section Content */
+
+.works-featured-content {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-content_row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-content_row1-type {
+    display: flex;
+    align-items: center;
+}
+
+/* Type */
+.featured-content_row1-type .cardText-type {
+    margin: 0;
+}
+
+.featured-content_row1-type ion-icon {
+    margin: 0 1rem;
+    font-size: 12px;
+    color: var(--midnight);
+}
+
+.featured-content_row2 {
+    margin: 1rem 0;
+}
+
+.featured-content_row2 p {
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .featured-content_row1-type .cardText-type {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
     .works-featured {
         margin: 0 1.5rem 1rem 1.5rem;
+    }
+    .works-featured-content {
+        margin: 2rem 1.5rem;
     }
 }

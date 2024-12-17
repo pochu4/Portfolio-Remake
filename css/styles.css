@@ -171,6 +171,18 @@ button {
     /* Slide up the card content */
 }
 
+/* Project Page Texts - Works */
+
+.featured-proj-title {
+    font-size: 2.25rem;
+}
+
+.featured-proj-subhead {
+    font-family: var(--medium);
+}
+
+
+
 
 
 @media (min-width: 768px) {
@@ -208,6 +220,11 @@ button {
 
     .card-content_row2 ion-icon {
         font-size: 28px;
+    }
+
+    /* Works Featured */
+    .featured-proj-title {
+        font-size: 3rem;
     }
 
 }
@@ -280,27 +297,27 @@ button {
         z-index: 0;
         text-align: center;
         padding: 1rem;
-        
+
     }
 
-    .roamCardBG{
+    .roamCardBG {
         background-color: #FFD398;
     }
 
-    .virtusCardBG{
+    .virtusCardBG {
         background-color: #f3eb9f;
     }
 
-    .epureCardBG{
+    .epureCardBG {
         background-color: #DFD7C1;
     }
 
-    .macadeCardBG{
+    .macadeCardBG {
         background-color: #A4B6AF;
     }
 
     .card:hover .card-image {
-        transform:translateY(-100px) ;
+        transform: translateY(-100px);
     }
 
 

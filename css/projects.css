@@ -1,0 +1,132 @@
+@import url(styles.css);
+
+.project-overview h3 {
+    margin: 1rem;
+}
+
+.project-information{
+    margin: 2rem 1rem;
+}
+
+.project-information p {
+    color: var(--midnight);
+    margin: 0.25rem 0;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.project-overview p {
+    margin-top: 1rem;
+}
+
+.project-info_role {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--midnight);
+}
+
+/* ROAM Challenge custom section */
+.roam-challenges_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.roam-challenge {
+    border: 1px solid var(--midnight);
+    /* background-color: var(--midnight); */
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.roam-challenge ion-icon {
+    color: var(--midnight);
+    font-size: 44px;
+}
+
+.roam-challenge p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .project-information {
+        width: 75%;
+    }
+
+    .project-information  p{
+        font-size: 1.25rem;
+    }
+
+    .roam-challenge {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-overview h3 {
+        margin: 0 1.5rem;
+    }
+    .project-information {
+        margin: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .roam-challenges_container {
+        gap: 1.5rem;
+    }
+    .roam-challenge {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .project-information  p{
+        font-size: 1.5rem;
+    }
+
+    .roam-challenge {
+        padding: 2rem
+    }
+
+    .roam-challenge ion-icon {
+        font-size: 64px;
+    }
+    .roam-challenge p {
+        font-size: 1.25rem;
+        width: 80%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .project-information {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+/* @media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1920px) {}
+
+@media (min-width: 2560px) {} */
