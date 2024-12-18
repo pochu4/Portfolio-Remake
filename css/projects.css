@@ -4,7 +4,7 @@
     margin: 1rem;
 }
 
-.project-information{
+.project-information {
     margin: 2rem 1rem;
 }
 
@@ -25,7 +25,7 @@
     border-bottom: 1px solid var(--midnight);
 }
 
-/* ROAM Challenge custom section */
+/* ROAM custom sections */
 .roam-challenges_container {
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 .roam-challenge {
-    border: 1px solid var(--midnight);
+    border: 1px solid var(--black);
     /* background-color: var(--midnight); */
     width: 100%;
     padding: 1rem;
@@ -55,6 +55,55 @@
     text-align: center;
 }
 
+.roam-hifi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.roam-hifi img{
+    width: 50%;
+}
+
+/* Project Pages Text */
+.project-text {
+    text-wrap: pretty;
+    font-size: 1rem;
+}
+
+.project-image_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.project-content-spacer {
+    margin-top: 1rem;
+}
+
+.project-results {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.project-results p {
+    font-size: 1rem;
+}
+
+.results-spacer {
+    margin-top: 1rem;
+}
+.project-results_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-results_left-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
 
 
 
@@ -63,21 +112,60 @@
         width: 75%;
     }
 
-    .project-information  p{
+    .project-information p {
         font-size: 1.25rem;
     }
 
     .roam-challenge {
         flex: 1;
     }
+
+    .roam-hifi img{
+        width: 25%;
+    }
+
+    /* Project Pages Text */
+    .project-text {
+        font-size: 1.25rem;
+    }
+
 }
 
 @media (min-width: 1024px) {
     .project-overview h3 {
         margin: 0 1.5rem;
     }
+
     .project-information {
         margin: 2rem 1.5rem;
+    }
+    .roam-hifi {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .project-content-spacer {
+        margin-top: 2rem;
+    }
+    .results-spacer {
+        margin-top: 0;
+    }
+
+    .project-results {
+        flex-direction: row;
+        gap: 1.5rem;
+        /* max-height: 60vh; */
+    }
+    .project-results_left {
+        flex: 1;
+    }
+    .project-results_right {
+        flex: 1;
+    }
+    .project-results_right img {
+        height: 100%;
     }
 }
 
@@ -85,14 +173,57 @@
     .roam-challenges_container {
         gap: 1.5rem;
     }
+
     .roam-challenge {
         width: 100%;
     }
+
+    .project-image_1 {
+        width: 50%;
+    }
+
+    .project-image_2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        max-height: 600px;
+    }
+
+    .project-image_2-1 {
+        max-width: 50%;
+    }
+
+    .project-image_2-2 {
+        max-width: calc(50% - 1.5rem);
+    }
+
+
+    /* Project Pages Text */
+    .project-text {
+        width: 75%;
+        font-size: 1.5rem;
+    }
+    .project-content-spacer {
+        margin-top: 2.5rem;
+    }
+
+    .roam-hifi {
+        margin-top: 1.5rem;
+    }
+
+    .roam-hifi img {
+        width: 12.5%;
+    }
+
+    .project-results p {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (min-width: 1920px) {
 
-    .project-information  p{
+    .project-information p {
         font-size: 1.5rem;
     }
 
@@ -103,15 +234,58 @@
     .roam-challenge ion-icon {
         font-size: 64px;
     }
+
     .roam-challenge p {
         font-size: 1.25rem;
         width: 80%;
     }
+    /* Project Pages Text */
+    .project-text {
+        width: 50%;
+        font-size: 1.75rem;
+    }
+
+    .project-results {
+        max-height: 60vh;
+    }
+
+    .project-results p {
+        font-size: 1.75rem;
+    }
+    .project-image_2 {
+        max-height: 700px;
+    }
 }
 
 @media (min-width: 2560px) {
+
+    .project-information p {
+        font-size: 2rem;
+    }
+
+    .project-text {
+        font-size: 2rem;
+    }
+
+    .project-results p {
+        font-size: 2rem;
+    }
+
+    .roam-challenge p {
+        font-size: 1.75rem;
+        width: 60%;
+    }
+    
     .project-information {
         width: 60%;
+    }
+
+    .project-image_2 {
+        max-height: 900px;
+    }
+
+    .project-content-spacer {
+        margin-top: 3.5rem;
     }
 }
 

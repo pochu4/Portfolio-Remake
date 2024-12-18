@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ".header-image",
       {
         duration: 1,
+        stagger: 0.05,
         width: "100%",
         height: "100%",
         ease: "power2.out",

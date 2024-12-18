@@ -15,7 +15,7 @@
 
 .email-tagline {
     text-align: end;
-    font-family: var(--light);
+    font-family: var(--book);
     font-size: 1.125rem;
 }
 
@@ -73,4 +73,13 @@
         width: 50%;
     }
 
+}
+
+@media (min-width: 1920px) {
+    .email-tagline {
+        font-size: 1.5rem;
+    }
+    .footer-closingtag p {
+        font-size: 1.5rem;
+    }
 }
