@@ -151,6 +151,10 @@
         font-size: 1.25rem;
     }
 
+    .project-results p {
+        font-size: 1.25rem;
+    }
+
     /* Style Guide Layout Change */
     .project-styleguide {
         display: flex;
@@ -247,7 +251,7 @@
     /* Project Pages Text */
     .project-text {
         width: 75%;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
     .project-content-spacer {
@@ -311,7 +315,7 @@
     /* Project Pages Text */
     .project-text {
         width: 50%;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .project-results {
@@ -319,7 +323,7 @@
     }
 
     .project-results p {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .project-image_2 {
@@ -344,11 +348,11 @@
     }
 
     .project-text {
-        font-size: 2rem;
+        font-size: 1.675rem;
     }
 
     .project-results p {
-        font-size: 2rem;
+        font-size: 1.675rem;
     }
 
     .roam-challenge p {
