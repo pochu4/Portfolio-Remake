@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(
       ".menu-divider",
       {
-        duration: 2,
+        duration: 1,
         width: "100%",
         ease: "power4.out",
       },
