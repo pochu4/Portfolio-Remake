@@ -45,6 +45,12 @@
     font-size: 32px;
     align-items: end;
     color: var(--black);
+    transition: color 0.3s ease;
+}
+
+.scrolldown-icon ion-icon:hover {
+    align-items: end;
+    color: var(--midnight);
 }
 
 .hero-right {}

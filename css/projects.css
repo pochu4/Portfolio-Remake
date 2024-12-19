@@ -60,7 +60,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.roam-hifi img{
+
+.roam-hifi img {
     width: 50%;
 }
 
@@ -93,18 +94,39 @@
 .results-spacer {
     margin-top: 1rem;
 }
+
 .project-results_left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .project-results_left-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
+/* Side by side text + image */
+.project-text_image .project-image_1 {
+    margin-top: 2rem;
+}
 
+/* 3 Image Style Guide */
+.project-styleguide {
+    background-color: var(--black);
+}
+
+/* Epure custom - For illustrations */
+
+.epure-2 {
+    height: min-content;
+    margin-top: 1rem;
+}
+
+.epure-2-2 {
+    margin-top: 1rem;
+}
 
 
 @media (min-width: 768px) {
@@ -120,7 +142,7 @@
         flex: 1;
     }
 
-    .roam-hifi img{
+    .roam-hifi img {
         width: 25%;
     }
 
@@ -128,6 +150,13 @@
     .project-text {
         font-size: 1.25rem;
     }
+
+    /* Style Guide Layout Change */
+    .project-styleguide {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 }
 
@@ -139,6 +168,7 @@
     .project-information {
         margin: 2rem 1.5rem;
     }
+
     .roam-hifi {
         display: flex;
         margin-top: 1rem;
@@ -149,6 +179,7 @@
     .project-content-spacer {
         margin-top: 2rem;
     }
+
     .results-spacer {
         margin-top: 0;
     }
@@ -158,14 +189,29 @@
         gap: 1.5rem;
         /* max-height: 60vh; */
     }
+
     .project-results_left {
         flex: 1;
     }
+
     .project-results_right {
         flex: 1;
     }
+
     .project-results_right img {
         height: 100%;
+    }
+
+    /* Epure 2 */
+    .epure-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .epure-2-1 {
+        width: 40%;
+    }
+    .epure-2-2 {
+        width: 60%;
     }
 }
 
@@ -203,6 +249,7 @@
         width: 75%;
         font-size: 1.5rem;
     }
+
     .project-content-spacer {
         margin-top: 2.5rem;
     }
@@ -218,6 +265,27 @@
     .project-results p {
         font-size: 1.5rem;
     }
+
+    .project-text_image {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .project-text_image-text {
+        width: 50%;
+    }
+
+    .project-text_image-text .project-text {
+        width: 100%;
+    }
+
+
+    .project-text_image .project-image_1 {
+        margin-top: 0;
+    }
+
+
+
 
 }
 
@@ -239,6 +307,7 @@
         font-size: 1.25rem;
         width: 80%;
     }
+
     /* Project Pages Text */
     .project-text {
         width: 50%;
@@ -252,8 +321,19 @@
     .project-results p {
         font-size: 1.75rem;
     }
+
     .project-image_2 {
         max-height: 700px;
+    }
+
+    .epure-2 {
+        margin-top: 2rem;
+    }
+    .epure-2-1 {
+        width: 30%;
+    }
+    .epure-2-2 {
+        width: 60%;
     }
 }
 
@@ -275,7 +355,7 @@
         font-size: 1.75rem;
         width: 60%;
     }
-    
+
     .project-information {
         width: 60%;
     }
