@@ -2,6 +2,7 @@
 
 .hero-section {
     height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -91,7 +92,7 @@
 }
 
 .mission-intro {
-    width: 80%;
+    width: 100%;
 }
 
 /* Works Page Second Row */
@@ -104,6 +105,8 @@
     padding: 0;
     padding-bottom: 2rem;
 }
+
+
 
 @media (min-width: 768px) {}
 
@@ -139,6 +142,10 @@
     .no-border .component-content {
         margin: 0 1.5rem;
         padding: 0;
+    }
+
+    .mission-intro {
+        width: 80%;
     }
 
 }
@@ -187,6 +194,10 @@
 
     .scrolldown-icon ion-icon {
         font-size: 64px;
+    }
+
+    .mission-intro {
+        width: 60%;
     }
 
 }

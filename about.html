@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Chua</title>
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/works.css">
+
 
     <!-- Meta Tags ! -->
     <meta name="description" content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC">
@@ -122,7 +127,7 @@
 
     <main>
 
-        <div class="hero-section">
+        <div class="hero-section works-hero-section">
             <div class="hero-left">
                 <div class="hero-content">
                     <h1>About Me</h1>
@@ -134,16 +139,10 @@
                             where I’m eager to challenge myself with new skills and exploring innovative approaches to
                             digital design. This program allows me to blend technical knowledge needed for visually
                             compelling experiences.</p>
-                        <!-- <p>With a previous certification in Marketing Management-Communications and previous work
-                            experiences in the sales industry, it’s allowed me to think outside the box when creating
-                            effective solutions for the digital world.</p> -->
                     </div>
                 </div>
-                <div class="scrolldown-icon">
-                    <ion-icon name="arrow-down"></ion-icon>
-                </div>
             </div>
-            <div class="hero-right">
+            <div class="hero-right works-hero-right">
                 <img src="images/johann-updatesize.jpg" alt="Roam Hiking Project">
             </div>
         </div>
@@ -174,7 +173,48 @@
             </div>
 
             <div class="component-content">
-                <div class="">
+                <div class="about-background_container">
+                    <div class="about-background_text">
+                        <p>With a previous certification in Marketing Management-Communications and previous work
+                            experiences in the sales industry, it’s allowed me to think outside the box when creating
+                            effective solutions for the digital world.</p>
+
+                        <p class="background-text-spacer">Growing up, I was always interested in different forms of art
+                            such as, photography, architecture, film, dance and fashion.
+                            This diverse appreciation serves as my sources of
+                            inspiration in my design workflow.</p>
+
+                        <p class="background-text-spacer">Now as I head into Product Design, I bring everything
+                            together and am able to blend my values of authenticity,
+                            curiosity, and practicality to create meaningful and
+                            effective solutions.</p>
+
+                        <p class="background-text-spacer">When I’m not behind the screen, you’ll probably find me at
+                            a driving range working on my (terrible) swing or getting a
+                            workout in at the gym!</p>
+                    </div>
+                    <div class="about-background_swiper">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="images/aboutpage/johann-before.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/aboutpage/jpan.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/aboutpage/johann-now.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/aboutpage/golf.jpg" alt=""></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -247,9 +287,30 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+    <!-- Swiper Testing! -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <!-- Script Files -->
     <script src="js/header.js"></script>
     <script src="js/scrolldownicon.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal', // Consider horizontal if vertical isn't essential
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3500,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
