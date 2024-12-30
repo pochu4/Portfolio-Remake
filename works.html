@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Chua</title>
 
-    <!--  -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/works.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Meta Tags! -->
-    <meta name="description" content="Projects, created by Johann Chua, a digital designer based in Vancouver, BC">
+    <meta name=" description" content="Projects, created by Johann Chua, a digital designer based in Vancouver, BC">
     <meta name="author" content="Johann Chua">
     <meta name="keywords"
         content="Johann Chua, Digital Identity, Product Designer, Portfolio, Web Development, User Experience Designer, User Interface Designer">
@@ -86,7 +88,8 @@
             <div class="menu-cols">
                 <div class="col">
                     <div class="header-img">
-                        <div class="header-image"><img src="images/roam/roam-hero.png" alt="Roam Hiking Project by Johann" class=""></div>
+                        <div class="header-image"><img src="images/roam/roam-hero.png"
+                                alt="Roam Hiking Project by Johann" class=""></div>
                     </div>
                 </div>
                 <div class="col">
@@ -127,11 +130,12 @@
             <div class="hero-left works-hero-left">
                 <div class="hero-content">
 
-                    <h1>Works</h1>
+                    <h1 class="works-ani">Works</h1>
 
                     <div class="hero-divider"></div>
 
-                    <div class="works-featured">
+                    <div class="works-featured" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-easing="ease-out" data-aos-delay="1000">
                         <div class="works-featured_title">
                             <h3>Featured Project</h3>
                             <ion-icon name="ellipse"></ion-icon>
@@ -141,7 +145,8 @@
                         </div>
                     </div>
 
-                    <div class="works-featured-content">
+                    <div class="works-featured-content" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-easing="ease-out" data-aos-delay="1000">
                         <div class="featured-content_row1">
                             <h4 class="featured-proj-title">ROAM</h4>
                             <div class="featured-content_row1-type">
@@ -173,19 +178,22 @@
         </div>
 
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-out" data-aos-delay="2000">
                 <div class="component-title">
                     <h3>All Projects</h3>
                     <ion-icon name="ellipse"></ion-icon>
                 </div>
             </div>
 
-            <div class="component-content works-spacer">
+            <div class="component-content works-spacer" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-out" data-aos-delay="2000">
                 <div class="card-container">
 
                     <div class="card">
                         <a href="virtus.html">
-                            <img src="images/virtus/Virtus-new-hero.jpg" alt="Virtus Project by Johann Chua" class="card-image">
+                            <img src="images/virtus/Virtus-new-hero.jpg" alt="Virtus Project by Johann Chua"
+                                class="card-image">
                             <div class="card-content virtusCardBG">
                                 <div class="card-content_row1">
                                     <h4 class="cardText-title">Virtus</h4>
@@ -234,7 +242,8 @@
 
                     <div class="card">
                         <a href="macade.html">
-                            <img src="images/macade/macade-hero2.png" alt="Macade Rebrand Project by Johann Chua" class="card-image">
+                            <img src="images/macade/macade-hero2.png" alt="Macade Rebrand Project by Johann Chua"
+                                class="card-image">
                             <div class="card-content macadeCardBG">
                                 <div class="card-content_row1">
                                     <h4 class="cardText-title">Macade Rebrand</h4>
@@ -281,7 +290,7 @@
 
     <footer>
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="component-title">
                     <h3>Let's Work Together</h3>
                     <ion-icon name="ellipse"></ion-icon>
@@ -289,7 +298,7 @@
 
             </div>
 
-            <div class="component-content footer-content">
+            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="email-container">
                     <h3>hello@johannchua.com</h3>
                     <div class="hero-divider"></div>
@@ -341,10 +350,24 @@
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper Testing! -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Split Type by Luke Peavey -->
+    <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
     <script src="js/header.js"></script>
     <script src="js/scrolldownicon.js"></script>
+    <script src="js/textanimation.js"></script>
+    <!-- AOS CDN - Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

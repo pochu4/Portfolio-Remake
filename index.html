@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Favicon -->
     <link rel="icon" href="images/logos/Test 3.svg" type="image/svg+xml">
 
@@ -126,9 +129,9 @@
         <div class="hero-section">
             <div class="hero-left">
                 <div class="hero-content">
-                    <h1>Johann Chua</h1>
+                    <h1 class="homepage-name">Johann Chua</h1>
                     <div class="hero-divider"></div>
-                    <h2 class="homepage-intro">A Digital Identity & Product Designer based in Vancouver, BC. Passionate
+                    <h2 class="homepage-intro homepage-bio-ani">A Digital Identity & Product Designer based in Vancouver, BC. Passionate
                         about
                         visual design, I hope to pursue opportunities within the creative industry and hope to apply
                         user-centric design principles to create stunning UI.</h2>
@@ -154,12 +157,12 @@
             </div>
 
             <div class="component-content">
-                <h2 class="mission-intro">I aim to keep pushing creative boundaries and design work that’s not only
+                <h2 class="mission-intro homepage-mission-ani">I aim to keep pushing creative boundaries and design work that’s not only
                     visually appealing but also functional and impactful.</h2>
             </div>
         </div>
 
-        <div class="component">
+        <div class="component" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out" data-aos-delay="1000">
             <div class="component-container">
                 <div class="component-title">
                     <h3>Recent Works</h3>
@@ -225,7 +228,7 @@
 
     <footer>
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="component-title">
                     <h3>Let's Work Together</h3>
                     <ion-icon name="ellipse"></ion-icon>
@@ -233,7 +236,7 @@
 
             </div>
 
-            <div class="component-content footer-content">
+            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="email-container">
                     <h3>hello@johannchua.com</h3>
                     <div class="hero-divider"></div>
@@ -285,12 +288,23 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
+    <!-- Split Type by Luke Peavey -->
+    <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
     <script src="js/header.js"></script>
 
     <script src="js/scrolldownicon.js"></script>
+
+    <script src="js/textanimation.js"></script>
+
+    <!-- AOS CDN - Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

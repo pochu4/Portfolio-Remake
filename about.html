@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/works.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <!-- Meta Tags ! -->
@@ -130,11 +132,14 @@
         <div class="hero-section works-hero-section">
             <div class="hero-left">
                 <div class="hero-content">
-                    <h1>About Me</h1>
+                    <h1 class="about-ani">About Me</h1>
                     <div class="hero-divider"></div>
-                    <h2 class="homepage-intro about-intro">Hello I'm Johann - A Digital Designer based in Vancouver, BC
+                    <h2 class="homepage-intro about-intro" data-aos="fade-up" data-aos-duration="2000"
+                        data-aos-easing="ease-out" data-aos-delay="1000">Hello I'm Johann - A Digital Designer based in
+                        Vancouver, BC
                     </h2>
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out"
+                        data-aos-delay="1000">
                         <p class="about-text_start">Currently, I’m pursuing New Media Design and Web Development at BCIT
                             where I’m eager to challenge myself with new skills and exploring innovative approaches to
                             digital design. This program allows me to blend technical knowledge needed for visually
@@ -148,7 +153,8 @@
         </div>
 
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-delay="2000">
                 <div class="component-title">
                     <h3>Skillset</h3>
                     <ion-icon name="ellipse"></ion-icon>
@@ -158,21 +164,24 @@
                 </div>
             </div>
 
-            <div class="component-content">
+            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-delay="2000">
                 <h2 class="mission-intro">UX Strategy, UI Design, Front-End Development, <br>Brand Identity, Web Design
                 </h2>
             </div>
         </div>
 
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out"
+                data-aos-delay="1000">
                 <div class="component-title">
                     <h3>My Background</h3>
                     <ion-icon name="ellipse"></ion-icon>
                 </div>
             </div>
 
-            <div class="component-content">
+            <div class="component-content" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out"
+                data-aos-delay="1000">
                 <div class="about-background_container">
                     <div class="about-background_text">
                         <p>With a previous certification in Marketing Management-Communications and previous work
@@ -194,14 +203,14 @@
                             workout in at the gym!</p>
                     </div>
                     <div class="about-background_swiper">
-                        
+
                         <div class="about-images-row1">
-                            <img src="images/aboutpage/johann-before.jpg" alt="">
+                            <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
                         </div>
 
                         <div class="about-images-row2">
-                            <img src="images/aboutpage/jpan.jpg" alt="">
-                            <img src="images/aboutpage/golf.jpg" alt="">
+                            <img src="images/aboutpage/johann-before.jpg" alt="Johann Chua">
+                            <img src="images/aboutpage/golf.jpg" alt="Golfing!">
                         </div>
 
                     </div>
@@ -216,7 +225,7 @@
 
     <footer>
         <div class="component">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="component-title">
                     <h3>Let's Work Together</h3>
                     <ion-icon name="ellipse"></ion-icon>
@@ -224,7 +233,8 @@
 
             </div>
 
-            <div class="component-content footer-content">
+            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-out">
                 <div class="email-container">
                     <h3>hello@johannchua.com</h3>
                     <div class="hero-divider"></div>
@@ -276,14 +286,23 @@
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Swiper Testing! -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Split Type by Luke Peavey -->
+    <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
     <script src="js/header.js"></script>
     <script src="js/scrolldownicon.js"></script>
+    <script src="js/textanimation.js"></script>
+    <!-- AOS CDN - Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
