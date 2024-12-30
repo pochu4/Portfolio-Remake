@@ -194,24 +194,14 @@
                             workout in at the gym!</p>
                     </div>
                     <div class="about-background_swiper">
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide"><img src="images/aboutpage/johann-before.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="images/aboutpage/jpan.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="images/aboutpage/johann-now.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="images/aboutpage/golf.jpg" alt=""></div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                        
+                        <div class="about-images-row1">
+                            <img src="images/aboutpage/johann-before.jpg" alt="">
+                        </div>
 
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                        <div class="about-images-row2">
+                            <img src="images/aboutpage/jpan.jpg" alt="">
+                            <img src="images/aboutpage/golf.jpg" alt="">
                         </div>
 
                     </div>
@@ -294,23 +284,7 @@
     <!-- Script Files -->
     <script src="js/header.js"></script>
     <script src="js/scrolldownicon.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal', // Consider horizontal if vertical isn't essential
-            loop: false,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 3500,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+
 </body>
 
 </html>

@@ -53,29 +53,8 @@ a {
     text-decoration: none;
 }
 
-/* button {
-    background-color: var(--midnight);
-    border-radius: 1rem;
-    color: var(--beige);
-    box-shadow: none;
-    padding: 10px 12px;
-    border: none;
-    cursor: pointer;
-}
-
-button a {
-    font-family: var(--book);
-    font-size: 1rem;
-}
-
-button:hover {
-    transition: 0.5s all;
-    background-color: var(--black);
-} */
-
 button {
     position: relative;
-    /* Ensure the button is the reference point for positioning */
     background-color: var(--black);
     border-radius: 1rem;
     color: var(--beige);
@@ -84,11 +63,8 @@ button {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    /* Prevent the pseudo-element from spilling out of the button */
     transition: color 0.5s ease;
-    /* Smooth text color transition */
     z-index: 1;
-    /* Ensure the button text stays on top */
 }
 
 button::before {
@@ -96,35 +72,27 @@ button::before {
     position: absolute;
     top: 0;
     left: -100%;
-    /* Start completely outside the button from the left */
     width: 100%;
     height: 100%;
     background-color: var(--midnight);
     transition: transform 0.5s ease;
-    /* Smooth slide-in effect */
     z-index: -1;
-    /* Push the sliding background behind the text */
 }
 
 button:hover::before {
     transform: translateX(100%);
-    /* Slide the pseudo-element to the right */
 }
 
 button a {
     position: relative;
-    /* Keep the text on top of the pseudo-element */
     font-family: var(--book);
     font-size: 1rem;
     color: inherit;
-    /* Inherit the button's color */
     transition: color 0.5s ease;
-    /* Smooth text color transition */
 }
 
 button:hover {
     color: var(--beige);
-    /* Keep the text color consistent with the button */
 }
 
 .highlight {
@@ -156,9 +124,8 @@ button:hover {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    /* Ensures the image maintains its aspect ratio */
+
     transition: transform 0.5s ease;
-    /* Smooth hover transition */
 }
 
 .card-content {
@@ -167,11 +134,9 @@ button:hover {
     left: 0;
     right: 0;
     background: rgba(255, 255, 255);
-    /* Semi-transparent background for card content */
     padding: 0.5rem;
     /* transform: translateY(100%);  */
     transition: transform 0.5s ease;
-    /* Smooth slide-up transition */
 }
 
 .card-content_row1 {
@@ -230,12 +195,10 @@ button:hover {
 
 .card:hover .card-image {
     transform: scale(1.1);
-    /* Slightly zoom out the image */
 }
 
 .card:hover .card-content {
     transform: translateY(0);
-    /* Slide up the card content */
 }
 
 /* Project Page Texts - Works */
@@ -261,20 +224,22 @@ button:hover {
     margin-top: 1rem;
 }
 
-.swiper {
-    width: 100%;
-    height: 300px;
+.about-images-row1 img{
+    height: 200px;
 }
 
-.swiper img {
+.about-images-row2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem; /* Space between images */
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
+.about-images-row2 img {
+    flex: 1;
+    width: 0;
+    height: 200px;
 }
 
 
@@ -322,6 +287,14 @@ button:hover {
     .swiper {
         height: 500px;
     }
+
+    .about-images-row1 img {
+        height: 300px;
+    }
+    .about-images-row2 img {
+        height: 300px;
+    }
+
 
 }
 
@@ -429,11 +402,9 @@ button:hover {
     .about-background_text {
         flex: 1;
     }
+
     .about-background_swiper {
         width: 50%;
-    }
-    .swiper {
-        height: 600px;
     }
 
     .about-background_text {
@@ -441,16 +412,15 @@ button:hover {
     }
 
     .background-text-spacer {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 
     .about-background_text p {
         width: 90%;
     }
-    
-
-
-
+    .about-images-row2 {
+        margin-bottom: 0;
+    }
 
 }
 
@@ -460,6 +430,12 @@ button:hover {
         font-size: 2.25rem;
     }
 
+    .about-images-row1 img {
+        height: 350px;
+    }
+    .about-images-row2 img {
+        height: 350px;
+    }
 }
 
 
