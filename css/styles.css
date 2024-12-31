@@ -67,7 +67,7 @@ button {
     z-index: 1;
 }
 
-button::before {
+.button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -79,7 +79,7 @@ button::before {
     z-index: -1;
 }
 
-button:hover::before {
+.button:hover::before {
     transform: translateX(100%);
 }
 

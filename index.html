@@ -76,53 +76,37 @@
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <a href="index.html" class="logo"><img src="images/logos/Test 3.svg" alt=""></a>
-            <div class="menu-open-btn"><ion-icon name="menu-outline"></ion-icon></div>
-        </nav>
-        <div class="menu-overlay">
-            <div class="menu-nav">
-                <div class="menu-logo"><img src="images/logos/Test 1.svg" alt=""></div>
-                <div class="menu-close-btn"><ion-icon name="close-outline"></ion-icon></div>
-            </div>
-            <div class="menu-cols">
-                <div class="col">
-                    <div class="header-img">
-                        <div class="header-image"><img src="images/roam/roam-hero.png" alt="" class=""></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="menu-link">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="menu-link">
-                        <a href="works.html">Works</a>
-                    </div>
-                    <div class="menu-link">
-                        <a href="about.html">About</a>
-                    </div>
-
-                    <div class="btn">
-                        <a href="resume/Johann Resume.pdf" target="_blank">RESUME</a>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-footer">
-                <div class="menu-divider"></div>
-                <div class="menu-footer-copy">
-                    <div class="slogan">
-                        <p class="">Designed & Developed by Johann Chua</p>
-                    </div>
-                    <div class="socials">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Are.na</a>
-                    </div>
-                </div>
-            </div>
+    <header class="main-tool-bar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logos/Test 3.svg" alt="Johann Chua - Digital Designer Vancouver"></a>
+        </div>
+        <div class="toggle-btn">
+            <button class="burger" onclick="this.classList.toggle('active');"></button>
         </div>
     </header>
+
+    <!-- Full Screened Menu -->
+    <div class="overlay2">
+        <nav class="overlay-menu">
+            <ul>
+                <li class="menu-item">
+                    <div class="menu-item-name">
+                        <p id="active"><a href="index.html">Home</a></p>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-name">
+                        <p><a href="works.html">Works</a></p>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-name">
+                        <p><a href="about.html">About</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
 
@@ -131,7 +115,8 @@
                 <div class="hero-content">
                     <h1 class="homepage-name">Johann Chua</h1>
                     <div class="hero-divider"></div>
-                    <h2 class="homepage-intro homepage-bio-ani">A Digital Identity & Product Designer based in Vancouver, BC. Passionate
+                    <h2 class="homepage-intro homepage-bio-ani">A Digital Identity & Product Designer based in
+                        Vancouver, BC. Passionate
                         about
                         visual design, I hope to pursue opportunities within the creative industry and hope to apply
                         user-centric design principles to create stunning UI.</h2>
@@ -157,12 +142,14 @@
             </div>
 
             <div class="component-content">
-                <h2 class="mission-intro homepage-mission-ani">I aim to keep pushing creative boundaries and design work that’s not only
+                <h2 class="mission-intro homepage-mission-ani">I aim to keep pushing creative boundaries and design work
+                    that’s not only
                     visually appealing but also functional and impactful.</h2>
             </div>
         </div>
 
-        <div class="component" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out" data-aos-delay="1000">
+        <div class="component" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out"
+            data-aos-delay="1000">
             <div class="component-container">
                 <div class="component-title">
                     <h3>Recent Works</h3>
@@ -236,7 +223,8 @@
 
             </div>
 
-            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-out">
                 <div class="email-container">
                     <h3>hello@johannchua.com</h3>
                     <div class="hero-divider"></div>
@@ -286,15 +274,16 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
 
     <!-- Split Type by Luke Peavey -->
     <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
-    <script src="js/header.js"></script>
+    <script src="js/fsmenu.js"></script>
 
     <script src="js/scrolldownicon.js"></script>
 
