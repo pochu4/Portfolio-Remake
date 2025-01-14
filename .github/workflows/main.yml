@@ -1,15 +1,16 @@
-on: 
-  push:
-    branches: [ main ]
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: 🚀 Deploy React
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: 📁 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
