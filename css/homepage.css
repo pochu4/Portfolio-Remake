@@ -58,7 +58,7 @@
 
 .hero-right img {
     width: 100%;
-    height: auto;
+    height: 400px;
     max-height: 400px;
     object-fit: cover;
 }
