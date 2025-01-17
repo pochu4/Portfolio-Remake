@@ -95,6 +95,11 @@ button:hover {
     color: var(--beige);
 }
 
+/* Custom Resume Button */
+.resume-custom {
+    margin: 1rem 1rem;
+}
+
 .highlight {
     color: var(--midnight);
 }
@@ -320,6 +325,9 @@ button:hover {
         padding: 0.75rem 1.125rem;
         font-size: 1.25rem;
     }
+    .resume-custom {
+        margin: 1rem 1.5rem;
+    }
 
 }
 
@@ -421,6 +429,9 @@ button:hover {
         margin-bottom: 0;
     }
 
+    .resume-custom {
+        margin: 1.5rem 1.5rem;
+    }
 }
 
 
@@ -441,6 +452,10 @@ button:hover {
 @media (min-width: 2560px) {
     h1 {
         font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 3rem;
     }
 
 

@@ -176,8 +176,8 @@
     }
 
     .homepage-intro {
-        width: 80%;
-        text-wrap: pretty;
+        
+        text-wrap: balance;
     }
 
     .no-border .component-content {
