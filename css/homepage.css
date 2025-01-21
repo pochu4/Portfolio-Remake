@@ -1,7 +1,7 @@
 @import url(./styles.css);
 
 .hero-section {
-    height: 80vh;
+    min-height: 80vh;
     overflow: hidden;
     display: flex;
     flex-direction: column-reverse;
@@ -21,7 +21,7 @@
 .hero-left h1,
 .hero-left p,
 .hero-left .scrolldown-icon ion-icon {
-    margin: 0 1rem;
+    margin: 0 1rem; 
 }
 
 
