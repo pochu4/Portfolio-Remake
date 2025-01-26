@@ -82,4 +82,10 @@
     .footer-closingtag p {
         font-size: 1.5rem;
     }
+
+    .social-link ion-icon {
+        font-size: 32px;
+    }
+
+
 }

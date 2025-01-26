@@ -88,7 +88,7 @@
 
 .component-content {
     margin: 0 1rem;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 .mission-intro {
@@ -176,12 +176,13 @@
     }
 
     .homepage-intro {
-        
-        text-wrap: balance;
+        text-wrap: pretty;
     }
-
     .no-border .component-content {
         padding-bottom: 2rem;
+    }
+    .mission-intro {
+        width: 60%;
     }
 }
 
@@ -199,6 +200,42 @@
     .mission-intro {
         width: 60%;
     }
+
+    .hero-left h1,
+    .hero-left p,
+    .hero-left .scrolldown-icon ion-icon {
+        margin: 0 2.5rem;
+    }
+
+    .hero-left h1 {
+        margin-top: 0.25rem;
+    }
+
+    .homepage-intro {
+        margin: 0 2.5rem;
+    }
+
+    .component {
+        padding-bottom: 1.5rem;
+    }
+
+    .component-container {
+        margin: 0 2.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .component-content {
+        margin: 0 2.5rem;
+    }
+
+    .no-border .component-content {
+        margin: 0 2.5rem;
+    }
+    .homepage-intro {
+        padding-top: 1rem;
+    }
+
+    
 
 }
 

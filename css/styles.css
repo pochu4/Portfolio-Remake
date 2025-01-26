@@ -21,12 +21,12 @@ h1 {
 
 h2 {
     font-family: var(--book);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--black);
 }
 
 h3 {
-    font-family: var(--book);
+    font-family: var(--medium);
     font-size: 1.5rem;
     color: var(--black);
 }
@@ -41,6 +41,7 @@ p {
     font-family: var(--book);
     font-size: 1.25rem;
     color: var(--black);
+    line-height: 1.375;
 }
 
 img {
@@ -195,6 +196,7 @@ button:hover {
 
 .cardText-intro {
     font-size: 1.25rem;
+    font-family: var(--book);
 }
 
 .card:hover .card-image {
@@ -225,7 +227,7 @@ button:hover {
 }
 
 .background-text-spacer {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .about-images-row1 img{
@@ -322,8 +324,8 @@ button:hover {
     button {
         /* background-color: var(--midnight); */
         border-radius: 3rem;
-        padding: 0.75rem 1.125rem;
-        font-size: 1.25rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
     }
     .resume-custom {
         margin: 1rem 1.5rem;
@@ -351,7 +353,7 @@ button:hover {
     }
 
     .about-text {
-        width: 90%;
+        width: 100%;
     }
 
     .card {
@@ -404,6 +406,7 @@ button:hover {
         display: flex;
         flex-direction: row;
         flex: 1;
+        gap: 1.5rem;
     }
 
     .about-background_text {
@@ -423,7 +426,7 @@ button:hover {
     }
 
     .about-background_text p {
-        width: 90%;
+        width: 100%;
     }
     .about-images-row2 {
         margin-bottom: 0;
@@ -441,11 +444,37 @@ button:hover {
     }
 
     .about-images-row1 img {
-        height: 300px;
+        height: 500px;
     }
     .about-images-row2 img {
-        height: 300px;
+        height: 400px;
     }
+
+    button {
+        font-size: 1.25rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .resume-custom {
+        margin: 1.5rem 2rem;
+    }
+
+    .card {
+        max-height: 600px;
+    }
+
+    .card-container {
+        gap: 2.5rem;
+    }
+
+    footer .component-content {
+        padding-bottom: 0;
+    }
+    
+    .about-background_container {
+        gap: 2.5rem;
+    }
+
 }
 
 
@@ -455,7 +484,7 @@ button:hover {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 

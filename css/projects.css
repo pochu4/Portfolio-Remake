@@ -244,14 +244,13 @@
     }
 
     .project-image_2-2 {
-        max-width: calc(50% - 1.5rem);
+        max-width: calc(50% - 2rem);
     }
 
 
     /* Project Pages Text */
     .project-text {
-        width: 75%;
-        /* font-size: 1.5rem; */
+        width: 50%;
     }
 
     .project-content-spacer {
@@ -291,6 +290,10 @@
 
 @media (min-width: 1920px) {
 
+    .project-content-spacer {
+        margin-top: 3rem;
+    }
+
     .project-information p {
         font-size: 1.5rem;
     }
@@ -312,6 +315,10 @@
     .project-text {
         width: 50%;
         font-size: 1.5rem;
+    }
+    
+    .project-text {
+        width: 50%;
     }
 
     .project-results {
@@ -335,12 +342,35 @@
     .epure-2-2 {
         width: 60%;
     }
+
+    .project-information {
+        margin: 2rem 2.5rem;
+    }
+    .project-overview h3 {
+        margin: 0 2.5rem;
+    }
+
+    .project-results {
+        gap: 2.5rem;
+    }
+
+    .project-image_2 {
+        gap: 2.5rem;
+    }
+
+    .roam-challenges_container {
+        gap: 2.5rem;
+    }
+    .project-text_image {
+        gap: 2.5rem
+    }
+
 }
 
 @media (min-width: 2560px) {
 
     .project-information p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .project-text {
@@ -352,8 +382,8 @@
     }
 
     .roam-challenge p {
-        font-size: 1.75rem;
-        width: 60%;
+        font-size: 1.5rem;
+        width: 80%;
     }
 
     .project-information {

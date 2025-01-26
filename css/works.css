@@ -95,6 +95,15 @@
     }
 }
 
+@media (min-width: 1920px) {
+    .works-featured {
+        margin: 1.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    .works-featured-content {
+        margin: 2rem 2.5rem 2rem 2.5rem;
+    }
+}
+
 
 @media (min-width: 2560px) {
     .featured-content_row1-type .cardText-type {
