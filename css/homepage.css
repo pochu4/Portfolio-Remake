@@ -189,6 +189,8 @@
 
 @media (min-width: 1920px) {
 
+
+
     .hero-left h1 {
         margin-top: 0.75rem;
     }
@@ -213,6 +215,7 @@
 
     .homepage-intro {
         margin: 0 2.5rem;
+        width: 80%;
     }
 
     .component {
@@ -221,7 +224,7 @@
 
     .component-container {
         margin: 0 2.5rem;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 
     .component-content {
@@ -234,14 +237,22 @@
     .homepage-intro {
         padding-top: 1rem;
     }
-
-    
-
 }
 
 
 @media (min-width: 2560px) {
     .hero-section {
         padding-top: 0;
+    }
+    .hero-section {
+        height: 80vh;
+    }
+    .hero-right img {
+        max-height: inherit;
+        height: 80vh;
+    }
+
+    .scrolldown-icon {
+        visibility: hidden;
     }
 }
