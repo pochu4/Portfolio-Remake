@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johann Chua | Designer & Developer</title>
+    <title>Johann Chua</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
@@ -78,7 +78,8 @@
 <body>
     <header class="main-tool-bar">
         <div class="logo">
-            <a href="index.html"><img src="images/logos/SubmarkTest.svg" alt="Johann Chua - Digital Designer Vancouver"></a>
+            <a href="index.html"><img src="images/logos/SubmarkTest.svg"
+                    alt="Johann Chua - Digital Designer Vancouver"></a>
         </div>
         <div class="toggle-btn">
             <button class="burger" onclick="this.classList.toggle('active');"></button>
@@ -126,12 +127,13 @@
                 </div>
             </div>
             <div class="hero-right">
-                <img src="images/roam/multiscreen.jpg" alt="Roam Hiking Project">
+                <img src="images/comingsoon.png" alt="Roam Hiking Project">
             </div>
         </div>
 
         <div class="component next">
-            <div class="component-container">
+            <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-delay="0">
                 <div class="component-title">
                     <h3>Direction</h3>
                     <ion-icon name="ellipse"></ion-icon>
@@ -141,15 +143,15 @@
                 </div>
             </div>
 
-            <div class="component-content">
-                <h2 class="mission-intro homepage-mission-ani">I aim to keep pushing creative boundaries and design work
+            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-delay="0">
+                <h2 class="mission-intro ">I aim to keep pushing creative boundaries and design work
                     that’s not only
                     visually appealing but also functional and impactful.</h2>
             </div>
         </div>
 
-        <div class="component" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out"
-            data-aos-delay="1000">
+        <div class="component" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
             <div class="component-container">
                 <div class="component-title">
                     <h3>Recent Works</h3>
@@ -293,7 +295,31 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Script for changing delay data on homepage
+        window.addEventListener('resize', checkScreenWidth);
+        window.addEventListener('load', checkScreenWidth);
+
+        // Create the function to check if screen width is above 2560
+        // At min-width of 2560px, hero section vh changes, so to better match the animations of the staggering text, delay needs to be added
+        function checkScreenWidth() {
+            // Get data-aos delay element
+            const elements = document.querySelectorAll('[data-aos-delay]');
+            elements.forEach(element => {
+                // Check if screenwith is above 2560
+                if (window.innerWidth >= 2560) {
+                    // Yes? Add the delay
+                    element.setAttribute('data-aos-delay', '2500');
+                } else {
+                    // No? dont.
+                    element.setAttribute('data-aos-delay', '0');
+                }
+            });
+        }
+        // Run
+        checkScreenWidth();
     </script>
+
 
 </body>
 

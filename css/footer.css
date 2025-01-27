@@ -82,4 +82,23 @@
     .footer-closingtag p {
         font-size: 1.5rem;
     }
+
+    .social-link a ion-icon {
+        font-size: 32px;
+        transition: transform 0.5s ease;
+    }
+    .social-link a:hover ion-icon {
+        transform: rotate(90deg);
+        color: var(--midnight);
+    }
+    
+    .social-link a p {
+        transition: transform 0.5s ease, color 0.5s ease, font-family 2s ease;
+    }
+
+    .social-link a:hover p {
+        color: var(--midnight);
+    }
+
+
 }
