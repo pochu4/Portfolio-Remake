@@ -63,7 +63,7 @@
 }
 
 .works-hero-section {
-    height: 100vh;
+    min-height: 100vh;
     /* overflow-y: hidden; */
 }
 
@@ -88,7 +88,8 @@
 
 @media (min-width: 1280px) {
     .works-hero-section {
-        height: 80vh;
+        min-height: 80vh;
+        max-height: 80vh;
     }
     .works-hero-right img {
         height: 100vh;

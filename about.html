@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Chua</title>
 
-
+    <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Stylesheets -->
@@ -156,8 +156,7 @@
                 </div>
             </div>
 
-            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
-                >
+            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <h2 class="mission-intro">UX Strategy, UI Design, Front-End Development, <br>Brand Identity, Web Design
                 </h2>
             </div>
@@ -194,17 +193,20 @@
                             a driving range working on my (terrible) swing or getting a
                             workout in at the gym!</p>
                     </div>
-                    <div class="about-background_swiper">
+                    <div class="about-background_swiper swiper">
 
-                        <div class="about-images-row1">
-                            <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/trnto.jpg" alt="Johann Chua">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/maca2.jpg" alt="Golfing!">
+                            </div>
                         </div>
-
-                        <div class="about-images-row2">
-                            <img src="images/aboutpage/johann-before.jpg" alt="Johann Chua">
-                            <img src="images/aboutpage/golf.jpg" alt="Golfing!">
-                        </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
 
                 </div>
@@ -272,7 +274,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -296,6 +298,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+
+        const swiper = new Swiper('.about-background_swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
     </script>
 
 </body>

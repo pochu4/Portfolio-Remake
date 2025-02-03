@@ -122,7 +122,7 @@
                         visual design, I hope to pursue opportunities within the creative industry and hope to apply
                         user-centric design principles to create stunning UI.</h2>
                 </div>
-                <div class="scrolldown-icon">
+                <div class="scrolldown-icon" id="scroll-down">
                     <ion-icon name="arrow-down" style="cursor: pointer;"></ion-icon>
                 </div>
             </div>
@@ -131,7 +131,7 @@
             </div>
         </div>
 
-        <div class="component next">
+        <div class="component next" id="next">
             <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
                 data-aos-delay="0">
                 <div class="component-title">
@@ -228,7 +228,9 @@
             <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-easing="ease-out">
                 <div class="email-container">
-                    <a href="mailto:hello@johannchua.com"><h3>hello@johannchua.com</h3></a>
+                    <a href="mailto:hello@johannchua.com">
+                        <h3>hello@johannchua.com</h3>
+                    </a>
                     <div class="hero-divider"></div>
                     <p class="email-tagline">For more info feel free to reach out!</h3>
                 </div>
@@ -274,21 +276,17 @@
     <!-- IONICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <!-- GSAP -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
-
     <!-- Split Type by Luke Peavey -->
     <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
     <script src="js/fsmenu.js"></script>
-
     <script src="js/scrolldownicon.js"></script>
-
     <script src="js/textanimation.js"></script>
 
     <!-- AOS CDN - Script -->
@@ -320,6 +318,9 @@
         checkScreenWidth();
     </script>
 
+    <script>
+
+    </script>
 
 </body>
 
