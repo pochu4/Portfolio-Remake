@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Chua</title>
 
-
+    <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Stylesheets -->
@@ -122,16 +122,20 @@
                 <div class="hero-content">
                     <h1 class="about-ani">About Me</h1>
                     <div class="hero-divider"></div>
-                    <h2 class="homepage-intro about-intro" data-aos="fade-up" data-aos-duration="2000"
+                    <h2 class="homepage-intro about-intro" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-easing="ease-out" data-aos-delay="1000">Hello I'm Johann - A Digital Designer based in
                         Vancouver, BC
                     </h2>
-                    <div class="about-text" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out"
+                    <div class="about-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
                         data-aos-delay="1000">
                         <p class="about-text_start">Currently, I’m pursuing New Media Design and Web Development at BCIT
                             where I’m eager to challenge myself with new skills and exploring innovative approaches to
                             digital design. This program allows me to blend technical knowledge needed for visually
                             compelling experiences.</p>
+                        <div class="resume-custom">
+                            <a href="resume/Johann Resume.pdf" target="_blank"><button class="button">VIEW MY
+                                    RESUME</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,18 +146,17 @@
 
         <div class="component">
             <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
-                data-aos-delay="2000">
+                data-aos-delay="1000">
                 <div class="component-title">
                     <h3>Skillset</h3>
                     <ion-icon name="ellipse"></ion-icon>
                 </div>
                 <div class="component-cta">
-                    <a href="resume/Johann Resume.pdf" target="_blank"><button class="button">RESUME</button></a>
+                    <a href="works.html"><button class="button">ALL PROJECTS</button></a>
                 </div>
             </div>
 
-            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
-                data-aos-delay="2000">
+            <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <h2 class="mission-intro">UX Strategy, UI Design, Front-End Development, <br>Brand Identity, Web Design
                 </h2>
             </div>
@@ -190,17 +193,20 @@
                             a driving range working on my (terrible) swing or getting a
                             workout in at the gym!</p>
                     </div>
-                    <div class="about-background_swiper">
+                    <div class="about-background_swiper swiper">
 
-                        <div class="about-images-row1">
-                            <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/trnto.jpg" alt="Johann Chua">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/aboutpage/maca2.jpg" alt="Golfing!">
+                            </div>
                         </div>
-
-                        <div class="about-images-row2">
-                            <img src="images/aboutpage/johann-before.jpg" alt="Johann Chua">
-                            <img src="images/aboutpage/golf.jpg" alt="Golfing!">
-                        </div>
-
+                        <div class="swiper-pagination"></div>
                     </div>
 
                 </div>
@@ -224,7 +230,9 @@
             <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-easing="ease-out">
                 <div class="email-container">
-                    <h3>hello@johannchua.com</h3>
+                    <a href="mailto:hello@johannchua.com">
+                        <h3>hello@johannchua.com</h3>
+                    </a>
                     <div class="hero-divider"></div>
                     <p class="email-tagline">For more info feel free to reach out!</h3>
                 </div>
@@ -290,6 +298,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+
+        const swiper = new Swiper('.about-background_swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
     </script>
 
 </body>

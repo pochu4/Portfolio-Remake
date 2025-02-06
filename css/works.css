@@ -63,7 +63,7 @@
 }
 
 .works-hero-section {
-    height: 100vh;
+    min-height: 100vh;
     /* overflow-y: hidden; */
 }
 
@@ -88,10 +88,20 @@
 
 @media (min-width: 1280px) {
     .works-hero-section {
-        height: 80vh;
+        min-height: 80vh;
+        max-height: 80vh;
     }
     .works-hero-right img {
         height: 100vh;
+    }
+}
+
+@media (min-width: 1920px) {
+    .works-featured {
+        margin: 1.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    .works-featured-content {
+        margin: 2rem 2.5rem 2rem 2.5rem;
     }
 }
 

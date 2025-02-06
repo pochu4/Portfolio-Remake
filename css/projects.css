@@ -128,6 +128,10 @@
     margin-top: 1rem;
 }
 
+.amacon-2col-2 {
+    margin-top: 1rem;
+}
+
 
 @media (min-width: 768px) {
     .project-information {
@@ -217,6 +221,34 @@
     .epure-2-2 {
         width: 60%;
     }
+
+    .amacon-2col {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .amacon-2col img {
+        flex: 1; /* Allow the images to grow equally */
+        object-fit: cover; /* Ensure proper scaling */
+        max-width: 100%; /* Prevent overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .amacon-2col-1 {
+        flex: 1;
+        width: 48%;
+        height: 100%;
+    }
+    
+
+    .amacon-2col-2 {
+        margin-top: 0rem;
+        flex: 1;
+        width: 48%;
+        height: 100%;
+    }
+
 }
 
 @media (min-width: 1280px) {
@@ -244,14 +276,13 @@
     }
 
     .project-image_2-2 {
-        max-width: calc(50% - 1.5rem);
+        max-width: calc(50% - 2rem);
     }
 
 
     /* Project Pages Text */
     .project-text {
-        width: 75%;
-        /* font-size: 1.5rem; */
+        width: 50%;
     }
 
     .project-content-spacer {
@@ -284,12 +315,20 @@
         margin-top: 0;
     }
 
+    .amacon-2col {
+        gap: 2.5rem;
+    }
+
 
 
 
 }
 
 @media (min-width: 1920px) {
+
+    .project-content-spacer {
+        margin-top: 3rem;
+    }
 
     .project-information p {
         font-size: 1.5rem;
@@ -313,6 +352,10 @@
         width: 50%;
         font-size: 1.5rem;
     }
+    
+    .project-text {
+        width: 50%;
+    }
 
     .project-results {
         max-height: 60vh;
@@ -335,12 +378,40 @@
     .epure-2-2 {
         width: 60%;
     }
+
+    .project-information {
+        margin: 2rem 2.5rem;
+    }
+    .project-overview h3 {
+        margin: 0 2.5rem;
+    }
+
+    .project-results {
+        gap: 2.5rem;
+    }
+
+    .project-image_2 {
+        gap: 2.5rem;
+    }
+
+    .roam-challenges_container {
+        gap: 2.5rem;
+    }
+    .project-text_image {
+        gap: 2.5rem
+    }
+
+    .amacon-2col {
+        gap: 3rem;
+    }
+
+
 }
 
 @media (min-width: 2560px) {
 
     .project-information p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .project-text {
@@ -352,8 +423,8 @@
     }
 
     .roam-challenge p {
-        font-size: 1.75rem;
-        width: 60%;
+        font-size: 1.5rem;
+        width: 80%;
     }
 
     .project-information {

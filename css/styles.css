@@ -10,7 +10,7 @@
 }
 
 body {
-    line-height: 1.1;
+    line-height: 1.25;
 }
 
 h1 {
@@ -21,12 +21,12 @@ h1 {
 
 h2 {
     font-family: var(--book);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--black);
 }
 
 h3 {
-    font-family: var(--book);
+    font-family: var(--medium);
     font-size: 1.5rem;
     color: var(--black);
 }
@@ -41,6 +41,7 @@ p {
     font-family: var(--book);
     font-size: 1.25rem;
     color: var(--black);
+    line-height: 1.375;
 }
 
 img {
@@ -93,6 +94,11 @@ button a {
 
 button:hover {
     color: var(--beige);
+}
+
+/* Custom Resume Button */
+.resume-custom {
+    margin: 1rem 1rem;
 }
 
 .highlight {
@@ -190,6 +196,7 @@ button:hover {
 
 .cardText-intro {
     font-size: 1.25rem;
+    font-family: var(--book);
 }
 
 .card:hover .card-image {
@@ -220,25 +227,46 @@ button:hover {
 }
 
 .background-text-spacer {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
-.about-images-row1 img{
-    height: 200px;
-}
 
-.about-images-row2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 1rem; /* Space between images */
+.about-background_swiper {
     width: 100%;
+    height: auto;
 }
 
-.about-images-row2 img {
-    flex: 1;
-    width: 0;
-    height: 200px;
+.swiper-slide {
+    width: 100%;
+    height: 300px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    text-align: end;
+    font-size: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid #000;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--black);
 }
 
 
@@ -249,7 +277,7 @@ button:hover {
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h3 {
@@ -283,18 +311,21 @@ button:hover {
         font-size: 3rem;
     }
 
-    .swiper {
+    .swiper-slide {
+        width: 100%;
         height: 500px;
+        overflow-y: hidden;
+        position: relative;
     }
 
-    .about-images-row1 img {
-        height: 300px;
-    }
-    .about-images-row2 img {
-        height: 300px;
+    .swiper-pagination {
+        margin-top: 1.25rem;
     }
 
-
+    .swiper-pagination-bullet {
+        width: 1rem;
+        height: 1rem;
+    }
 }
 
 
@@ -317,8 +348,12 @@ button:hover {
     button {
         /* background-color: var(--midnight); */
         border-radius: 3rem;
-        padding: 0.75rem 1.125rem;
-        font-size: 1.25rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .resume-custom {
+        margin: 1rem 1.5rem;
     }
 
 }
@@ -343,7 +378,7 @@ button:hover {
     }
 
     .about-text {
-        width: 90%;
+        width: 100%;
     }
 
     .card {
@@ -385,7 +420,7 @@ button:hover {
     }
 
     .macadeCardBG {
-        background-color: #A4B6AF;
+        background-color: #D6DDF2;
     }
 
     .card:hover .card-image {
@@ -396,14 +431,11 @@ button:hover {
         display: flex;
         flex-direction: row;
         flex: 1;
+        gap: 2rem;
     }
 
     .about-background_text {
         flex: 1;
-    }
-
-    .about-background_swiper {
-        width: 50%;
     }
 
     .about-background_text {
@@ -415,11 +447,65 @@ button:hover {
     }
 
     .about-background_text p {
-        width: 90%;
+        width: 100%;
     }
-    .about-images-row2 {
-        margin-bottom: 0;
+
+    .resume-custom {
+        margin: 1.5rem 1.5rem;
     }
+
+    .about-background_swiper {
+        width: 50%;
+        height: 500px;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+
+    /* .about-background_swiper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .swiper-slide {
+        width: 100%;
+        height: 300px;
+        overflow-y: hidden;
+        position: relative;
+    }
+    
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination {
+        position: relative; 
+        margin-top: 10px;
+        text-align: end;
+        font-size: 1rem;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: transparent;
+        opacity: 1;
+        border: 1px solid #000;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: var(--black);
+    } */
 
 }
 
@@ -430,17 +516,58 @@ button:hover {
     }
 
     .about-images-row1 img {
-        height: 300px;
+        height: 500px;
     }
+
     .about-images-row2 img {
-        height: 300px;
+        height: 400px;
     }
+
+    button {
+        font-size: 1.25rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .resume-custom {
+        margin: 1.5rem 2rem;
+    }
+
+    .card {
+        max-height: 600px;
+    }
+
+    .card-container {
+        gap: 2.5rem;
+    }
+
+    footer .component-content {
+        padding-bottom: 0;
+    }
+
+    .about-background_container {
+        gap: 2.5rem;
+    }
+
+    .about-background_swiper {
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+
 }
 
 
 @media (min-width: 2560px) {
     h1 {
         font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 
 
@@ -481,4 +608,15 @@ button:hover {
     .card:hover .card-image {
         transform: translateY(-115px);
     }
+
+    .about-background_swiper {
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 750px;
+        position: relative;
+    }
+
 }
