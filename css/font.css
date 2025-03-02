@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Neue Montreal Medium';
+    font-family: 'PP Neue Montreal - Medium';
     src: url('../fonts/PPNEUEMONTREAL-MEDIUM.OTF') format('opentype');
     font-weight: 530; 
     font-style: normal; /* Matches the font's actual style */
 }
 
 @font-face {
-    font-family: 'Neue Montreal Reg';
+    font-family: 'PP Neue Montreal - Book';
     src: url('../fonts/PPNEUEMONTREAL-BOOK.OTF') format('opentype');
     font-weight: 450;
     font-style: normal; /* Matches the font's actual style */
 }
 
 @font-face {
-    font-family: 'Neue Montreal Light';
+    font-family: 'PP Neue Montreal - Light';
     src: url('../fonts/PPNEUEMONTREAL-THIN.OTF') format('opentype');
     font-style: normal; /* Matches the font's actual style */
 }
