@@ -25,6 +25,10 @@
     margin-top: 10px;
 }
 
+.pp-large {
+    font-size: 24px;
+}
+
 .pp-bold {
     font-family: var(--medium);
 }
@@ -191,26 +195,26 @@
     text-decoration: none;
     color: var(--black);
     display: block;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .moreprojects-card a {
     text-decoration: none;
     color: var(--black);
     display: block;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .moreprojects-card img {
     width: 100%;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .moreprojects-card a:hover img {
     transform: scale(1.1);
 }
 .moreprojects-card .project-icon-cta ion-icon {
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .moreprojects-card a:hover .project-icon-cta ion-icon {
@@ -273,6 +277,10 @@
     font-size: 1rem;
 }
 
+/* .pp-large-text {
+    margin: 1rem 0;
+} */
+
 
 
 
@@ -303,6 +311,9 @@
         font-size: 20px;
         line-height: 36px;
         margin-top: 15px;
+    }
+    .pp-large {
+        font-size: 2rem;
     }
 
 
@@ -423,6 +434,10 @@
         margin-bottom: 0.75rem;
     }
 
+    .pp-large {
+        font-size: 2.75rem;
+    }
+
 
     /* Sections */
 
@@ -494,6 +509,10 @@
 
     .pp-detail {
         font-size: 16px;
+    }
+
+    .pp-large {
+        font-size: 3.5rem;
     }
 
     .pp-section {
