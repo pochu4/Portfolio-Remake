@@ -275,12 +275,15 @@
 .project-link button a {
     font-family: var(--book);
     font-size: 1rem;
+    /* transition: transform 0.5s ease-in-out; */
 }
 
-/* .pp-large-text {
+.project-link button a:hover {
+    
+}
+.pp-large-text {
     margin: 1rem 0;
-} */
-
+}
 
 
 
@@ -312,11 +315,10 @@
         line-height: 36px;
         margin-top: 15px;
     }
+
     .pp-large {
         font-size: 2rem;
     }
-
-
 
     .pp-spacer {
         margin-top: 3rem;
@@ -437,6 +439,7 @@
     .pp-large {
         font-size: 2.75rem;
     }
+
 
 
     /* Sections */
