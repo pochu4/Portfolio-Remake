@@ -4,7 +4,7 @@ const headerName = new SplitType('.homepage-name', { types: 'chars' })
 gsap.from(headerName.chars, {
     opacity: 0,
     y: 25,
-    duration: 1.25,
+    duration: 1,
     ease: "power3.inOut",
     stagger: { amount: 0.25 },
 })
@@ -15,7 +15,7 @@ const headerBio = new SplitType('.homepage-bio-ani', { types: 'words' })
 gsap.from(headerBio.words, {
     opacity: 0,
     y: 25,
-    duration: 1.25,
+    duration: 1,
     delay: 1,
     ease: "power3.inOut",
     stagger: { amount: 1.5 },
@@ -27,7 +27,7 @@ const direction = new SplitType('.homepage-mission-ani', { types: 'words' })
 gsap.from(direction.words, {
     opacity: 0,
     y: 25,
-    duration: 2,
+    duration: 1,
     ease: "power3.inOut",
     stagger: { amount: 0.5 },
     scrollTrigger: {
@@ -44,7 +44,7 @@ const about = new SplitType('.about-ani', { types: 'chars' })
 gsap.from(about.chars, {
     opacity: 0,
     y: 25,
-    duration: 2,
+    duration: 1,
     ease: "power3.inOut",
     stagger: { amount: 0.25 },
 })
@@ -55,7 +55,7 @@ const works = new SplitType('.works-ani', { types: 'chars' })
 gsap.from(works.chars, {
     opacity: 0,
     y: 25,
-    duration: 2,
+    duration: 1,
     ease: "power3.inOut",
     stagger: { amount: 0.25 },
 })
