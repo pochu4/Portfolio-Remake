@@ -188,7 +188,13 @@
 }
 
 .mp-card-wrapper {
+    display: inline-block; 
     overflow: hidden;
+}
+
+.mp-card-wrapper img {
+    display: block;
+
 }
 
 .moreprojects-cards a {
