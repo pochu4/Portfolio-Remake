@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     isOpen = !isOpen;
   });
 
+
+  // Sroll down, remove menu
+
   const showAnim = gsap.from('.main-tool-bar', {
     yPercent: -100,
     paused: true,
@@ -48,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     end: "max",
     markers: false,
     onUpdate: (self) => {
-      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+      if (!isOpen) {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+      }
     }
   });
 });
