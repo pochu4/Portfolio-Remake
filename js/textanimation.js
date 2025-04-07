@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.from(headerName.chars, {
         opacity: 0,
         y: 25,
-        duration: 1,
+        duration: 0.5,
         ease: "power3.inOut",
         stagger: { amount: 0.25 },
     });
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.from(headerBio.words, {
         opacity: 0,
         y: 25,
-        duration: 1,
+        duration: 0.75,
         delay: 1,
         ease: "power3.inOut",
-        stagger: { amount: 1.5 },
+        stagger: { amount: 1 },
     });
 });
 
