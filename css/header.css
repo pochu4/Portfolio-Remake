@@ -31,9 +31,10 @@ header {
 
 .logo img {
     height: 2rem;
-    width: 100%;
+    width: auto;
     margin-top: 7px;
 }
+
 
 .burger {
     display: flex;

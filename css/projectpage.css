@@ -188,7 +188,13 @@
 }
 
 .mp-card-wrapper {
+    display: inline-block; 
     overflow: hidden;
+}
+
+.mp-card-wrapper img {
+    display: block;
+
 }
 
 .moreprojects-cards a {
@@ -234,7 +240,6 @@
 
 .moreproj-inline {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -249,7 +254,7 @@
 }
 
 .project-icon-cta {
-    background-color: var(--midnight);
+    /* background-color: var(--midnight); */
     border-radius: 20px;
     width: 28px;
     height: 28px;
@@ -259,7 +264,7 @@
 .project-icon-cta ion-icon {
     transform: rotate(45deg);
     font-size: 28px;
-    color: white;
+    color: var(--black);
 }
 
 .moreprojects-cards .moreprojects-card:nth-child(2),

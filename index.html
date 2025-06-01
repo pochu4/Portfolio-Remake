@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Johann Chua | Digital Designer</title>
 
     <!-- Stylesheets -->
@@ -51,7 +51,7 @@
         "name": "Johann Chua",
         "jobTitle": "Digital Identity Designer, Product Designer",
         "url": "https://www.johannchua.com/",
-        "email": "chua.johann01@gmail.com",
+        "email": "hello@johannchua.com",
         "image": "https://www.johannchua.com/images/Submark.svg",
         "logo": "images/Primary .svg",
         "knowsAbout": ["Figma", "Photoshop", "Illustrator", "InDesign", "HTML5", "CSS", "JavaScript", "Tailwind CSS"],
@@ -270,8 +270,9 @@
     </footer>
 
     <!-- IONICONS -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -284,6 +285,7 @@
     <script src="js/fsmenu.js"></script>
     <script src="js/scrolldownicon.js"></script>
     <script src="js/textanimation.js"></script>
+    <script src="js/resize-overlay.js"></script>
 
     <!-- AOS CDN - Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -291,27 +293,27 @@
         AOS.init();
 
         // Script for changing delay data on homepage
-        window.addEventListener('resize', checkScreenWidth);
-        window.addEventListener('load', checkScreenWidth);
+        // window.addEventListener('resize', checkScreenWidth);
+        // window.addEventListener('load', checkScreenWidth);
 
         // Create the function to check if screen width is above 2560
         // At min-width of 2560px, hero section vh changes, so to better match the animations of the staggering text, delay needs to be added
-        function checkScreenWidth() {
-            // Get data-aos delay element
-            const elements = document.querySelectorAll('[data-aos-delay]');
-            elements.forEach(element => {
-                // Check if screenwith is above 2560
-                if (window.innerWidth >= 2560) {
-                    // Yes? Add the delay
-                    element.setAttribute('data-aos-delay', '2500');
-                } else {
-                    // No? dont.
-                    element.setAttribute('data-aos-delay', '0');
-                }
-            });
-        }
-        // Run
-        checkScreenWidth();
+        // function checkScreenWidth() {
+            
+        //     const elements = document.querySelectorAll('[data-aos-delay]');
+        //     elements.forEach(element => {
+                
+        //         if (window.innerWidth >= 2560) {
+                    
+        //             element.setAttribute('data-aos-delay', '2500');
+        //         } else {
+                    
+        //             element.setAttribute('data-aos-delay', '0');
+        //         }
+        //     });
+        // }
+        
+        // checkScreenWidth();
     </script>
 </body>
 
