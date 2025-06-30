@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/marquee.css">
 
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -78,8 +79,7 @@
 <body>
     <header class="main-tool-bar">
         <div class="logo">
-            <a href="index.html"><img src="images/logos/SubmarkTest.svg"
-                    alt="Johann Chua - Digital Designer Vancouver"></a>
+            <a href="index.html"><p class="nav-name">Johann Chua</p></a>
         </div>
         <div class="toggle-btn">
             <button class="burger" onclick="this.classList.toggle('active');"></button>
@@ -111,7 +111,7 @@
 
     <main>
 
-        <div class="hero-section">
+        <!-- <div class="hero-section">
             <div class="hero-left">
                 <div class="hero-content">
                     <h1 class="homepage-name">Johann Chua</h1>
@@ -125,6 +125,42 @@
             </div>
             <div class="hero-right">
                 <img src="images/comingsoon.png" alt="Roam Hiking Project">
+            </div>
+        </div> -->
+
+        <!-- TEST --> 
+         <div class="hero">
+            <div class="hero-marquee">
+                <div class="slider">
+                    <span><a href="cc.html"><img src="./images/cc/mockup.png" alt="Amacon"></img></a></span>
+                    <span><a href="roam.html"><img src="./images/roam/roam-hero.png" alt="Roam Hiking"></img></a></span>
+                    <span><a href="virtus.html"><img src="./images/virtus/new/virtusmockup.jpg" alt="Virtus Fitness"></img></a></span>
+                    <span><a href="epure.html"><img src="./images/epure/epure-hero.png" alt="Epure Living"></img></a></span>
+                    <span><a href="amacon.html"><img src="./images/amacon/Banner.png" alt="Amacon"></img></a></span>
+                    <span><a href="cc.html"><img src="./images/cc/mockup.png" alt="Amacon"></img></a></span>
+                    <span><a href="roam.html"><img src="./images/roam/roam-hero.png" alt="Roam Hiking"></img></a></span>
+                    <span><a href="virtus.html"><img src="./images/virtus/new/virtusmockup.jpg" alt="Virtus Fitness"></img></a></span>
+                    <span><a href="epure.html"><img src="./images/epure/epure-hero.png" alt="Epure Living"></img></a></span>
+                    <span><a href="amacon.html"><img src="./images/amacon/Banner.png" alt="Amacon"></img></a></span>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-content_container">
+                    <div class="hero-content_name">
+                        <h1 class="hero-header-ani">Multidisciplinary designer and developer. I help teams and companies build meaningful products and create memorable digital experiences.</h1>
+                    </div>
+                    <div class="hero-content_bio">
+                        <p>Hi, I’m Johann, a digital designer specializing in web and product design. Passionate about visual design, I thrive in team environments and aim to contribute to teams that craft thoughtful, user-centered products.</p>
+                    </div>
+                    <div class="hero-content-cta hero-content-cta-link">
+                        <span><a href="#footer">Get in Touch</a><ion-icon name="arrow-up"></ion-icon></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-arrow">
+                <ion-icon name="chevron-down-outline" size="large"></ion-icon>
             </div>
         </div>
 
@@ -142,8 +178,7 @@
 
             <div class="component-content" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out"
                 data-aos-delay="0">
-                <h2 class="mission-intro "> Passionate
-                    about visual design, I thrive in team environments and aim to contribute to teams that craft thoughtful, user-centered products.</h2>
+                <h2 class="mission-intro ">My design journey began with a deep interest in creating intuitive and visually compelling experiences. Before transitioning into design, I spent several years in the customer service industry. This experience sharpened my ability to understand people's needs, frustrations, and behaviours.</h2>
             </div>
         </div>
 
@@ -211,7 +246,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="component">
             <div class="component-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div class="component-title">
@@ -286,6 +321,8 @@
     <script src="js/scrolldownicon.js"></script>
     <script src="js/textanimation.js"></script>
     <script src="js/resize-overlay.js"></script>
+    <!-- Hero Section Marquee -->
+    <script src="js/imageMarquee.js"></script>
 
     <!-- AOS CDN - Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

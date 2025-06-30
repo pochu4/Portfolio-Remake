@@ -67,6 +67,14 @@ button {
     transition: color 0.5s ease;
     z-index: 1;
 }
+/* Nav Name */
+
+.nav-name {
+    font-family: var(--book);
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-decoration: none;
+}
 
 .button::before {
     content: "";
@@ -366,7 +374,7 @@ button:hover {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     h3 {
@@ -512,9 +520,7 @@ button:hover {
 
 
 @media (min-width: 1920px) {
-    h2 {
-        font-size: 2.25rem;
-    }
+    
 
     .about-images-row1 img {
         height: 500px;
@@ -525,8 +531,8 @@ button:hover {
     }
 
     button {
-        font-size: 1.25rem;
-        padding: 0.75rem 2rem;
+        font-size: 1.125rem;
+        padding: 0.5rem 1.75rem;
     }
 
     .resume-custom {
