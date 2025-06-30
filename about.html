@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/about.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -84,7 +85,9 @@
 <body>
     <header class="main-tool-bar">
         <div class="logo">
-            <a href="index.html"><p class="nav-name">Johann Chua</p></a>
+            <a href="index.html">
+                <p class="nav-name">Johann Chua</p>
+            </a>
         </div>
         <div class="toggle-btn">
             <button class="burger" onclick="this.classList.toggle('active');"></button>
@@ -115,7 +118,7 @@
     </div>
 
     <main>
-
+        <!-- 
         <div class="hero-section works-hero-section">
             <div class="hero-left">
                 <div class="hero-content">
@@ -140,74 +143,85 @@
             <div class="hero-right works-hero-right">
                 <img src="images/johann-updatesize.jpg" alt="Roam Hiking Project">
             </div>
-        </div>
+        </div> -->
 
-        <div class="component">
-            <div class="component-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out">
-                <div class="component-title">
-                    <h3>Skillset</h3>
-                    <ion-icon name="ellipse"></ion-icon>
-                </div>
-                <div class="component-cta">
-                    <a href="works.html"><button class="button">ALL PROJECTS</button></a>
-                </div>
+        <div class="works-hero">
+            <div class="works-hero_title">
+                <h1>About Me</h1>
             </div>
+            <div class="works-hero_intro">
+                <h3>Hello again — I'm Johann, a digital designer based in Vancouver, BC.</h3>
+                <div class="works-hero_intro-filter">
 
-            <div class="component-content" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out">
-                <h2 class="mission-intro">UX Strategy, UI Design, Front-End Development, <br>Brand Identity, Web Design
-                </h2>
-            </div>
-        </div>
-
-        <div class="component">
-            <div class="component-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out">
-                <div class="component-title">
-                    <h3>My Background</h3>
-                    <ion-icon name="ellipse"></ion-icon>
-                </div>
-            </div>
-
-            <div class="component-content" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out">
-                <div class="about-background_container">
-                    <div class="about-background_text">
-                        <p>With a previous certification in Marketing Management-Communications and previous work
-                            experiences in the sales industry, it’s allowed me to think outside the box when creating
-                            effective solutions for the digital world.</p>
-
-                        <p class="background-text-spacer">Growing up, I was always interested in different forms of art
-                            such as, photography, architecture, film, dance and fashion.
-                            This diverse appreciation serves as my sources of
-                            inspiration in my design workflow.</p>
-
-                        <p class="background-text-spacer">Now as I head into Product Design, I bring everything
-                            together and am able to blend my values of authenticity,
-                            curiosity, and practicality to create meaningful and
-                            effective solutions.</p>
-
-                        <p class="background-text-spacer">When I’m not behind the screen, you’ll probably find me at
-                            a driving range working on my (terrible) swing or getting a
-                            workout in at the gym!</p>
-                    </div>
-                    <div class="about-background_swiper swiper">
-
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/aboutpage/trnto.jpg" alt="Johann Chua">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/aboutpage/maca2.jpg" alt="Golfing!">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+                    <a href="resume/Johann Resume.pdf" target="_blank"><button class="button">VIEW
+                            RESUME</button></a>
 
                 </div>
             </div>
         </div>
 
+        <div class="about-s1">
+            <div class="about-s1_intro-container">
+                <div class="about-s1_intro">
+                    <ion-icon name="arrow-up"></ion-icon>
+                    <p class="about-text_start">Currently, I’m pursuing New Media Design and Web Development at BCIT
+                        where I’m eager to challenge myself with new skills and exploring innovative approaches to
+                        digital design. This program allows me to blend the technical knowledge needed for visually
+                        compelling experiences.</p>
+                </div>
+                <div class="about-s1_intro">
+                    <ion-icon name="arrow-up"></ion-icon>
+                    <p class="about-text_start">Currently, I’m pursuing New Media Design and Web Development at BCIT
+                        where I’m eager to challenge myself with new skills and exploring innovative approaches to
+                        digital design. This program allows me to blend the technical knowledge needed for visually
+                        compelling experiences.</p>
+                </div>
+            </div>
+
+            <div class="about-s1_image">
+                <img src="images/johann-updatesize.jpg" alt="Roam Hiking Project">
+            </div>
+        </div>
+
+        <div class="about-s2">
+            <div class="about-s2_title">
+                <h3>Skillset</h3>
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <div class="about-s2_skillset">
+                <div class="about-s2_skillset-container">
+                    <h2>UX Strategy</h2>
+                    <div class="skillset-divider"></div>
+                    <h2>UI Design</h2>
+                    <div class="skillset-divider"></div>
+                    <h2>Front-End Development</h2>
+                    <div class="skillset-divider"></div>
+                    <h2>Brand Identity</h2>
+                    <div class="skillset-divider"></div>
+                    <h2>Graphic Design</h2>
+                </div>
+                <div class="skillset-cta">
+                    <a href="works.html"><ion-icon name="arrow-up"></ion-icon><p>View Projects</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-s3">
+            <div class="about-s3_title">
+                <h3>Background</h3>
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <div class="about-s3_content">
+                <img src="images/aboutpage/trnto.jpg" alt="Johann Chua">
+                <p>My previous experience in marketing and sales has taught me how to understand audiences, craft compelling messages and creating effective strategies - all of which play a vital role in user-centered designs.</p>
+                <div class="about-s3_content-2imgs">
+                    <img src="images/aboutpage/jpan.jpg" alt="Mt. Fuji shot by Johann C">
+                    <img src="images/aboutpage/maca2.jpg" alt="Golfing!">
+                </div>
+                <p>Growing up, I was always drawn to different creative outlets whether it be architecture, photography, fashion, etc. My diverse appreciation for all these mediums serves as my sources of inspiration in my design workflow.</p>
+                <p>When I'm not behind the screen, you'll probably find me at a driving range working on my swing or getting a workout in at the gym! As I continue to grow as a designer, I hope to explore different areas like print and typography design.</p>
+            </div>
+        </div>
 
 
     </main>

@@ -1,0 +1,394 @@
+@import url(./styles.css);
+
+.about-s1 {
+    margin: 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about-s1_image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.about-s1_intro {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;/
+}
+
+.about-s1_intro ion-icon {
+    font-size: 20px;
+    color: var(--gray);
+    transform: rotate(90deg);
+    flex: 0 0 auto;
+    margin-top: 4px;
+}
+
+.about-s1_intro p {
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+/* Section 2 Skillset */
+
+.about-s2 {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-s2_title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.about-s2 h3 {
+    color: var(--black);
+    font-family: var(--book);
+}
+
+.about-s2 ion-icon {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.about-s2 h2 {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.about-s2_skillset {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.skillset-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    margin: 0.5rem 0;
+}
+
+.skillset-cta {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.skillset-cta ion-icon {
+    transform: rotate(90deg);
+    color: var(--black);
+    font-size: 20px;
+    margin-right: 0.75rem;
+}
+
+.skillset-cta a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 0.2rem;
+}
+
+.skillset-cta p {
+    color: var(--black);
+    font-family: var(--medium);
+}
+
+/* Section 3 */
+
+
+.about-s3 {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-s3_title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.about-s3 h3 {
+    color: var(--black);
+    font-family: var(--book);
+}
+
+.about-s3 ion-icon {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.about-s3_content {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.about-s3_content p {
+    margin: 1rem 0;
+}
+
+.about-s3_content-2imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .about-s1_intro p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    .about-s2 {
+        margin: 2rem 1rem;
+        flex-direction: row;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .about-s2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-s2_title {
+        width: 28%;
+    }
+
+    .about-s2_skillset {
+        width: 100%;
+        margin: 0;
+    }
+
+    .skillset-cta ion-icon {
+        font-size: 24px;
+    }
+
+    .about-s3 {
+        margin: 2rem 1rem;
+        flex-direction: row;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .about-s3 h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-s3_title {
+        width: 28%;
+    }
+
+    .about-s3_content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-s3 p {
+        font-size: 1.125rem;
+    }
+
+
+
+}
+
+@media (min-width: 1024px) {
+    .about-s1 {
+        margin: 0 1.5rem;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .about-s1_image,
+    .about-s1_intro-container {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .about-s1_intro {
+        margin-top: 0
+    }
+
+    .about-s1_intro ion-icon {
+        margin-top: 4px;
+    }
+
+    .about-s1_image img {
+        max-height: 400px;
+    }
+
+    .about-s2 {
+        margin: 3rem 1.5rem;
+    }
+
+    .about-s2_title {
+        width: 35%;
+    }
+
+    .about-s2 h3 {
+        font-size: 2rem;
+    }
+
+    .about-s2 h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-s3 {
+        margin: 3rem 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .about-s3_title {
+        width: 35%;
+    }
+
+    .about-s3 h3 {
+        font-size: 2rem;
+    }
+
+    .about-s3_content p {
+        margin: 2rem 0;
+    }
+
+    .about-s3_content img {
+        max-height: 400px ;
+    }
+
+    .about-s3_content-2imgs {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        overflow: hidden;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .about-s3_content-2imgs img {
+        flex: 1 1 0;
+        min-width: 0;
+        height: auto;
+        object-fit: cover;
+        /* Remove width: 100%; */
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .about-s1_image img {
+        max-height: 500px;
+    }
+
+    .about-s2 {}
+
+    .about-s2_title {
+        width: 40%;
+    }
+
+    .about-s2_title ion-icon {
+        font-size: 32px;
+    }
+
+    .about-s2 h3 {
+        font-size: 2.25rem;
+    }
+
+    .about-s2 h2 {
+        font-size: 2rem;
+    }
+
+    .skillset-divider {
+        margin: 1rem 0;
+    }
+
+    .skillset-cta ion-icon {
+        font-size: 24px;
+    }
+
+    .about-s3 {
+        margin-bottom: 0;
+    }
+
+    .about-s3_title {
+        width: 40%;
+    }
+
+    .about-s3_content img {
+        max-height: 500px ;
+    }
+
+    .about-s3 h3 {
+        font-size: 2.25rem;
+    }
+
+    .about-s3_content p {
+        font-size: 1.25rem;
+        width: 85%;
+        margin: 2.5rem 0;
+        line-height: 1.675;
+    }
+    
+
+}
+
+@media (min-width: 1920px) {
+    .about-s1 {
+        margin: 0 2.5rem;
+    }
+
+    .about-s2 {
+        margin: 4rem 2.5rem;
+    }
+
+    .about-s1_intro ion-icon {
+        margin-top: 4px;
+        font-size: 24px;
+        ;
+    }
+
+    .about-s1_intro p {
+        font-size: 1.375rem;
+    }
+
+    .about-s2 h3 {
+        font-size: 2.25rem;
+    }
+
+    .about-s2 h2 {
+        font-size: 2.25rem;
+    }
+
+    .skillset-cta ion-icon {
+        font-size: 24px;
+    }
+
+    .about-s3 {
+        margin: 4rem 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .about-s3_content p {
+        font-size: 1.5rem;
+        margin: 3rem 0;
+    }
+
+    .about-s3_content img {
+        max-height: 600px ;
+    }
+    
+
+}
