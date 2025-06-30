@@ -67,6 +67,7 @@ button {
     transition: color 0.5s ease;
     z-index: 1;
 }
+
 /* Nav Name */
 
 .nav-name {
@@ -126,12 +127,18 @@ button:hover {
 
 /* Cards - Used on Multiple Pages */
 
+.card-container {
+    margin: 0 1rem;
+    padding-bottom: 1rem;
+    min-height: 400px;
+}
 
 .card {
     /* border: 1px solid var(--black);
     padding: 0.5rem; */
     overflow: hidden;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .card-image {
@@ -161,7 +168,12 @@ button:hover {
 .card-content_row1-discipline {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+
+}
+
+.cardText-type {
+    line-height: 1;
 }
 
 .card-content_row2 {
@@ -170,18 +182,15 @@ button:hover {
     margin-top: 0.5rem;
 }
 
-.card2-mobile {
-    margin-top: 1rem;
-}
-
 /* Card Icons */
 /* Project Type Spacer */
 
 
 .card-content_row1 ion-icon {
-    font-size: 12px;
+    font-size: 10px;
     /* color: var(--midnight); */
     color: var(--black);
+    margin: 0 0.375rem;
 
 }
 
@@ -278,6 +287,11 @@ button:hover {
     background-color: var(--black);
 }
 
+.home-no-margin {
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (min-width: 768px) {
     h1 {
@@ -341,18 +355,29 @@ button:hover {
 @media (min-width: 1024px) {
     .card-container {
         display: flex;
+        flex-wrap: wrap;
+        /* allow wrapping */
         justify-content: space-between;
         gap: 1.5rem;
-    }
-
-    .card2-mobile {
-        margin-top: 0;
+        margin: 0 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .card {
-        width: 50%;
+        flex: 1 1 calc(50% - 0.75rem);
+        /* 2 per row, responsive */
+        max-width: calc(50% - 0.75rem);
         max-height: 550px;
+        transition: opacity 0.3s ease, transform 0.3s cubic-bezier(.4, 0, .2, 1);
+        opacity: 1;
+        transform: translateY(0);
     }
+
+    .card.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(40px);
+}
 
     button {
         /* background-color: var(--midnight); */
@@ -395,6 +420,7 @@ button:hover {
         overflow: hidden;
         width: 50%;
         height: 600px;
+        margin-bottom: 0;
     }
 
     .card-image {
@@ -478,49 +504,11 @@ button:hover {
         position: relative;
     }
 
-
-    /* .about-background_swiper {
-        width: 100%;
-        height: auto;
-    }
-    
-    .swiper-slide {
-        width: 100%;
-        height: 300px;
-        overflow-y: hidden;
-        position: relative;
-    }
-    
-    .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .swiper-pagination {
-        position: relative; 
-        margin-top: 10px;
-        text-align: end;
-        font-size: 1rem;
-    }
-    
-    .swiper-pagination-bullet {
-        width: 0.75rem;
-        height: 0.75rem;
-        background-color: transparent;
-        opacity: 1;
-        border: 1px solid #000;
-        transition: background-color 0.3s, border-color 0.3s;
-    }
-    
-    .swiper-pagination-bullet-active {
-        background-color: var(--black);
-    } */
-
 }
 
 
 @media (min-width: 1920px) {
-    
+
 
     .about-images-row1 img {
         height: 500px;
@@ -539,12 +527,26 @@ button:hover {
         margin: 1.5rem 2rem;
     }
 
+    .card-container {
+        margin: 0 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .home-no-margin {
+        margin: 0;
+        padding: 0;
+    }
+
     .card {
         max-height: 600px;
+        flex: 1 1 calc(50% - 1.25rem);
+        /* 2 per row, responsive */
+        max-width: calc(50% - 1.25rem);
     }
 
     .card-container {
         gap: 2.5rem;
+        min-height: 400px;
     }
 
     footer .component-content {
