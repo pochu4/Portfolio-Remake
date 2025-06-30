@@ -10,10 +10,10 @@ gsap.to(".scrolldown-icon ion-icon", {
 gsap.registerPlugin(ScrollToPlugin);
 
 
-document.getElementById("scroll-down").addEventListener("click", function () {
-    gsap.to(window, {
-        duration: 1, 
-        scrollTo: "#next",
-        ease: "power2.inOut" 
-    });
-});
+// document.getElementById("scroll-down").addEventListener("click", function () {
+//     gsap.to(window, {
+//         duration: 1, 
+//         scrollTo: "#next",
+//         ease: "power2.inOut" 
+//     });
+// });
