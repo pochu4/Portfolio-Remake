@@ -327,6 +327,10 @@
         width: 40%;
     }
 
+    .about-s3_title ion-icon {
+        font-size: 32px;
+    }
+
     .about-s3_content img {
         max-height: 500px ;
     }
