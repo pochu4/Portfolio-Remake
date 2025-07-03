@@ -115,10 +115,10 @@ button:hover {
     color: var(--midnight);
 }
 
-
+/* 
 .about-intro {
     font-family: var(--medium);
-}
+} */
 
 .about-text {
     margin: 1rem 0;
