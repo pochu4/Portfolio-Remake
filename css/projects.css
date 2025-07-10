@@ -194,6 +194,9 @@
 
 
 @media (min-width: 768px) {
+
+    
+
     .project-information {
         width: 75%;
     }
@@ -229,6 +232,11 @@
 }
 
 @media (min-width: 1024px) {
+
+    .works-hero_intro {
+        margin-top: 4rem;
+    }
+
     .project-overview h3 {
         margin: 0 1.5rem;
     }
@@ -357,6 +365,11 @@
 }
 
 @media (min-width: 1280px) {
+
+    .works-hero {
+        padding-top: 8rem;
+    }
+
     .roam-challenges_container {
         gap: 1.5rem;
     }
@@ -430,6 +443,14 @@
 }
 
 @media (min-width: 1920px) {
+
+    .works-hero {
+        padding-top: 8rem;
+    }
+
+    .works-hero_intro {
+        margin-top: 6rem;
+    }
 
     .project-content-spacer {
         margin-top: 3rem;
@@ -512,7 +533,7 @@
 
     .works-hero {
         margin: 0 2.5rem;
-        padding-top: 5rem;
+        padding-top: 6rem;
     }
     
     .works-hero_title {
