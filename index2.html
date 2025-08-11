@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>Johann Chua | Digital Designer</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/newhome.css" />
+    <link rel="stylesheet" href="css/newheader.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logos/SubmarkTest.svg" type="image/svg+xml" />
+
+    <!-- Meta Tags ! -->
+    <meta
+      name="description"
+      content="Johann Chua, A digital identity and product designer based in Vancouver, BC."
+    />
+    <meta name="author" content="Johann Chua" />
+    <meta
+      name="keywords"
+      content="Johann Chua, Digital Identity, Product Designer, Portfolio, Web Development, User Experience Designer, User Interface Designer"
+    />
+
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- OpenGraph Protocol Meta -->
+    <meta property="og:title" content="Johann Chua" />
+    <meta
+      property="og:description"
+      content="Digital Identity and Product Designer based in Vancouver, BC."
+    />
+    <meta property="og:url" content="https://www.johannchua.com/" />
+    <meta
+      property="og:image"
+      content="https://www.johannchua.com/images/Submark.svg"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Johann Chua" />
+    <meta
+      name="twitter:description"
+      content="Digital Identity and Product Designer based in Vancouver, BC."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.johannchua.com/images/Submark.svg"
+    />
+    <meta name="twitter:url" content="https://www.johannchua.com/" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Johann Chua",
+          "jobTitle": "Digital Identity Designer, Product Designer",
+          "url": "https://www.johannchua.com/",
+          "email": "hello@johannchua.com",
+          "image": "https://www.johannchua.com/images/Submark.svg",
+          "logo": "images/Primary .svg",
+          "knowsAbout": ["Figma", "Photoshop", "Illustrator", "InDesign", "HTML5", "CSS", "JavaScript", "Tailwind CSS"],
+          "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Vancouver",
+              "addressRegion": "BC",
+              "addressCountry": "Canada"
+          },
+          "sameAs": [
+              "https://www.facebook.com/jochu29/",
+              "https://www.instagram.com/johann.chua/"
+              "https://www.linkedin.com/in/johann-chua/"
+          ],
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "BCIT"
+        },
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><h2>Johann Chua</h2></a>
+        </div>
+
+        <!-- Desktop time -->
+        <div class="time">Vancouver, <span id="time">--:--</span></div>
+
+        <!-- Desktop links -->
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+              <a href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Burger icon -->
+        <button
+          class="burger"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <ion-icon name="menu-outline" size="large"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-title">
+          <h1>
+            Multi-disciplinary <br />
+            designer & developer
+          </h1>
+        </div>
+        <div class="hero-intro">
+          <p>
+            Hi, I’m Johann, a digital designer specializing in web and product
+            design. Passionate about visual design, I thrive in team
+            environments and aim to contribute to teams that craft thoughtful,
+            user-centered products.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Full-screen mobile menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="menu-time">Vancouver, <span id="menuTime">--:--</span></div>
+      <ul class="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="menu-backdrop" id="menuBackdrop" hidden></div>
+
+    <main></main>
+
+    <script>
+      // Time updater
+      function setTime() {
+        const now = new Date();
+        const t = now.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        });
+        const desktop = document.getElementById("time");
+        const mobile = document.getElementById("menuTime");
+        if (desktop) desktop.textContent = t;
+        if (mobile) mobile.textContent = t;
+      }
+      setTime();
+      setInterval(setTime, 1000);
+    </script>
+
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
+    <!-- Split Type by Luke Peavey -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Script Files -->
+    <script src="js/newmenu.js"></script>
+    <!-- <script src="js/scrolldownicon.js"></script>
+    <script src="js/textanimation.js"></script>
+    <script src="js/resize-overlay.js"></script> -->
+
+    <!-- AOS CDN - Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Script for changing delay data on homepage
+      // window.addEventListener('resize', checkScreenWidth);
+      // window.addEventListener('load', checkScreenWidth);
+
+      // Create the function to check if screen width is above 2560
+      // At min-width of 2560px, hero section vh changes, so to better match the animations of the staggering text, delay needs to be added
+      // function checkScreenWidth() {
+
+      //     const elements = document.querySelectorAll('[data-aos-delay]');
+      //     elements.forEach(element => {
+
+      //         if (window.innerWidth >= 2560) {
+
+      //             element.setAttribute('data-aos-delay', '2500');
+      //         } else {
+
+      //             element.setAttribute('data-aos-delay', '0');
+      //         }
+      //     });
+      // }
+
+      // checkScreenWidth();
+    </script>
+  </body>
+</html>

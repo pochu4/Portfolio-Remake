@@ -1,0 +1,167 @@
+@import url(styles.css);
+
+body {
+  padding-top: 5rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  padding: 1rem;
+  
+}
+
+.logo {
+  grid-column: 1 / span 3;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+.time {
+  grid-column: 4 / span 2; 
+  font-size: 1rem;
+  font-family: var(--book);
+  color: #646464;
+}
+
+.nav-links {
+  grid-column: 7 / span 5;
+  text-align: right;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: var(--book);
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li::after {
+  content: ",";
+  margin: 0 0.25rem;
+}
+
+.nav-links li:last-child::after {
+  content: ""; /* remove comma after last link */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+/* Burger */
+.burger {
+  grid-column: 12 / span 1;
+  justify-self: end;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black; /* black icon */
+}
+
+/* Full-screen menu (no animation) */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgb(231, 43, 43);
+  display: none;
+  flex-direction: column;
+  padding: 16px 20px 24px;
+}
+
+.menu-time {
+  font-size: 1.125rem;
+  font-family: var(--book);
+  color: #646464;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.menu-links {
+  list-style: none;
+  margin-top: auto; /* push links to bottom */
+  padding: 0;
+}
+.menu-links li + li {
+  border-top: 1px solid #000000;
+}
+.menu-links a {
+  display: block;
+  padding: 16px 2px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+  font-family: var(--book);
+}
+
+/* Backdrop */
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 998;
+  display: none;
+}
+
+
+/* Mobile rules */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .time {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .logo {
+    font-size: 1rem;
+    grid-column: 1 / span 5;
+  }
+  .header-container 
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (min-width: 2560px) {
+}
