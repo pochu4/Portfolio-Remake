@@ -136,12 +136,11 @@
 .works-hero {
     display: flex;
     flex-direction: column;
-    padding-top: 4.5rem;
     margin: 0 1rem;
 }
 
 .works-hero_title {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .works-hero_intro {
@@ -151,7 +150,7 @@
 
 .works-hero_intro h3 {
     font-family: var(--book);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .works-hero_intro button {
@@ -233,9 +232,6 @@
 
 @media (min-width: 1024px) {
 
-    .works-hero_intro {
-        margin-top: 4rem;
-    }
 
     .project-overview h3 {
         margin: 0 1.5rem;
@@ -366,9 +362,6 @@
 
 @media (min-width: 1280px) {
 
-    .works-hero {
-        padding-top: 8rem;
-    }
 
     .roam-challenges_container {
         gap: 1.5rem;
@@ -444,13 +437,7 @@
 
 @media (min-width: 1920px) {
 
-    .works-hero {
-        padding-top: 8rem;
-    }
-
-    .works-hero_intro {
-        margin-top: 6rem;
-    }
+    
 
     .project-content-spacer {
         margin-top: 3rem;
@@ -533,7 +520,7 @@
 
     .works-hero {
         margin: 0 2.5rem;
-        padding-top: 6rem;
+        
     }
     
     .works-hero_title {

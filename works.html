@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/newheader.css" />
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/works.css">
     <!-- AOS CSS -->
@@ -78,39 +78,75 @@
 </head>
 
 <body>
-    <header class="main-tool-bar">
+       <header>
+      <div class="header-container">
         <div class="logo">
-            <a href="index.html">
-                <p class="nav-name">Johann Chua</p>
-            </a>
+          <a href="index.html"><h2>Johann Chua</h2></a>
         </div>
-        <div class="toggle-btn">
-            <button class="burger" onclick="this.classList.toggle('active');"></button>
+
+        <!-- Desktop time -->
+        <div class="time">Vancouver, <span id="time">--:--</span></div>
+
+        <!-- Desktop links -->
+        <div class="nav-links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Projects</a></li>
+            <li>
+              <a href="resume/Johann Resume.pdf" target="_blank" rel="noopener"
+                >Resume</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <button
+          class="burger menu-toggle"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+      </div>
     </header>
 
-    <!-- Full Screened Menu -->
-    <div class="overlay2">
-        <nav class="overlay-menu">
-            <ul>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p><a href="index.html">Home</a></p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p id="active"><a href="works.html">Works</a></p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p><a href="about.html">About</a></p>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+    <!-- Full-screen mobile menu -->
+    <div
+      class="full-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="full-menu_container">
+        <div class="full-menu_content">
+          <div class="menu-time">
+            Vancouver, <br /><span id="menuTime">--:--:--</span>
+          </div>
+          <div class="menu-nav-links">
+            <div class="menu-nav-links">
+              <a href="about.html" class="menu-nav-links_link">
+                <span>About</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+              <a href="works.html" class="menu-nav-links_link">
+                <span>Projects</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+              <a
+                href="resume/Johann Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                class="menu-nav-links_link"
+              >
+                <span>Resume</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <main>
         <div class="works-hero">
@@ -308,7 +344,7 @@
     <script src="https://unpkg.com/split-type"></script>
 
     <!-- Script Files -->
-    <script src="js/fsmenu.js"></script>
+    <script src="js/newmenu.js"></script>
     <script src="js/works-textanimation.js"></script>
     <script src="js/resize-overlay.js"></script>
 
