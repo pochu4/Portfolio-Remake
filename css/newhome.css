@@ -6,7 +6,7 @@
 
 .hero-section {
   margin: 1rem 1rem;
-  padding-bottom: 3.5rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid #505050;
 }
 
@@ -29,6 +29,91 @@
   color: var(--gray);
 }
 
+/* Component */
+
+.home-section {
+  margin: 1.5rem 1rem;
+  padding-bottom: 2rem;
+  /* border-bottom: 2px solid #cccccc */
+}
+
+.home-grid-title {
+  margin-bottom: 1.75rem;
+}
+
+.grid-title_cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.75rem;
+}
+
+.grid-title_cont ion-icon {
+  font-size: 12px;
+}
+
+.home-section_projects {
+}
+
+.home-section_project {
+  margin-top: 2rem;
+}
+
+.home-grid-content {
+  margin-bottom: 2rem;
+}
+
+.home-section_project img {
+  margin-bottom: 0.5rem;
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-section_projectinfo {
+}
+
+.home-projectinfo-l1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectinfo_title {
+  font-size: 1.25rem;
+  font-family: var(--medium);
+}
+
+.projectinfo_timestamp {
+  font-size: 1rem;
+  font-family: var(--medium);
+  color: var(--gray);
+}
+
+.home-projectinfo-l2 {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-projectinfo-l2 p {
+  font-size: 1rem;
+  font-family: var(--book);
+  color: var(--gray);
+}
+
+.home-section_cta {
+  display: flex;
+  justify-content: end;
+}
+
+.home-section_cta button {
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 2rem;
+}
+
 @media (min-width: 768px) {
   .hero-title {
     width: 80%;
@@ -36,6 +121,22 @@
 
   .hero-intro {
     width: 80%;
+  }
+
+  .home-grid-title {
+    margin: 1rem 0;
+  }
+
+  .home-section_project {
+    margin: 2rem 0;
+  }
+
+  .grid-title_cont h3 {
+    font-size: 1.5rem;
+  }
+
+  .home-section_project img {
+    height: 300px;
   }
 }
 
@@ -51,12 +152,24 @@
   .hero-intro {
     width: 60%;
   }
+
+  .home-section_project img {
+    height: 400px;
+  }
+
+  .home-section {
+    margin: 1rem 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
   .hero-title {
     width: 100%;
   }
+
+  /* .section-spacer {
+    padding-top: 10rem;
+  } */
 
   .hero-intro {
     width: 100%;
@@ -71,6 +184,82 @@
     grid-column: 1 / span 6;
     padding-right: 1rem;
   }
+
+  .home-section {
+    margin: 3rem 1.5rem;
+    display: grid;
+    padding-bottom: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .home-grid-title {
+    grid-column: 1 / span 3;
+  }
+
+  .home-grid-content {
+    grid-column: 4 / span 9;
+  }
+  .home-section_cta {
+    grid-column: 4 / span 9;
+    margin-top: 3rem;
+    justify-content: start;
+  }
+
+  .home-section_cta button {
+    font-size: 1.25rem;
+    padding: 10px 16px;
+    border-radius: 2rem;
+  }
+
+  .home-section_projects {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .home-grid-title {
+    margin: 0;
+  }
+
+  .home-section_project {
+    margin: 0;
+  }
+  .home-grid-content {
+    margin-bottom: 0rem;
+  }
+
+  .home-section_project {
+    --reveal: 120px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .home-section_project img {
+    position: absolute;
+    top: calc(-1 * var(--reveal)); /* pull image up */
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: 1;
+    transform: translateY(var(--reveal)); /* then push it back down */
+    transition: transform 0.75s ease;
+  }
+  .home-section_projectinfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .home-section_project:hover img {
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1536px) {
@@ -78,11 +267,29 @@
     grid-column: 1 / span 4;
     padding-right: 1rem;
   }
+  .hero-section {
+    padding-bottom: 3.5rem;
+  }
+
+  .section-spacer {
+    padding-top: 10rem;
+  }
+
 }
 
 @media (min-width: 1920px) {
   .hero-section {
     margin: 1rem 2.5rem;
+  }
+  .home-section {
+    margin: 3rem 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .home-projectinfo-l3 button {
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 2rem;
   }
 }
 

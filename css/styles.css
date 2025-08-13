@@ -58,10 +58,11 @@ a {
 button {
     position: relative;
     background-color: var(--black);
+    font-family: var(--book);
     border-radius: 1rem;
     color: var(--beige);
     box-shadow: none;
-    padding: 10px 12px;
+    padding: 8px 10px; 
     border: none;
     cursor: pointer;
     overflow: hidden;
