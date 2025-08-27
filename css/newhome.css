@@ -103,6 +103,12 @@
   color: var(--gray);
 }
 
+.home-projectinfo-l3 {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
 .home-section_cta {
   display: flex;
   justify-content: end;
@@ -260,6 +266,20 @@
   .home-section_project:hover img {
     transform: translateY(0);
   }
+
+  .home-projectinfo-l2 {
+    margin-bottom: 0.25rem;
+  }
+
+  .home-projectinfo-l3 {
+  justify-content: end;
+
+}
+
+.home-section_cta {
+  justify-content: start;
+}
+
 }
 
 @media (min-width: 1536px) {
