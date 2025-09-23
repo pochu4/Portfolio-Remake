@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/newhome.css" />
     <link rel="stylesheet" href="css/newheader.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/newfooter.css" />
 
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -194,7 +194,7 @@
               <div class="home-section_projectinfo">
                 <div class="home-projectinfo-l1">
                   <p class="projectinfo_title">Conscious Connections</p>
-                  <p class="projectinfo_timestamp">2024</p>
+                  <p class="projectinfo_timestamp">2025</p>
                 </div>
                 <div class="home-projectinfo-l2">
                   <p>Branding</p>
@@ -261,7 +261,11 @@
         </div>
 
         <div class="home-section_projects home-grid-content">
-          <h3>Before transitioning into design, I spent several years in the customer service industry. This experience sharpened my ability to understand people's needs, frustrations, and behaviours.</h3>
+          <h2>
+            Before transitioning into design, I spent several years in the
+            customer service industry. This experience sharpened my ability to
+            understand people's needs, frustrations, and behaviours.
+          </h3>
         </div>
 
         <div class="home-section_cta">
@@ -280,13 +284,107 @@
         </div>
 
         <div class="home-section_projects home-grid-content">
-          <img src="images/johann-updatesize.jpg" alt="">
+          <div class="testimonial-cont testimonial-1-spacer">
+            <div class="testimonial-profile">
+              <div class="testimonial-profile_img">
+                <img src="images/Shar.jpg" alt="Sharleen Yan - UX Designer" />
+              </div>
+              <div class="testimonial-profile_info">
+                <div class="testimonial-profile_info-cont">
+                  <p class="testimonial-name">Sharleen Yan</p>
+                  <p class="testimonial-role">
+                    Head of Product Design @ SimuHealth & Convergence
+                  </p>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/sharleenyan/"
+                  target="_blank"
+                  class="testimonial-link"
+                  >Sharleen's LinkedIn<ion-icon
+                    name="arrow-forward-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-text">
+              <p class="testimonial-h-quote">
+                I had the opportunity to mentor Johann throughout his internship
+                at Convergence.
+              </p>
+              <p class="testimonial-b-quote">
+                Johann joined us as a design intern and contributed to several
+                projects during his time here. His design work is clean and
+                modern, and he collaborated well with the team. He was open to
+                feedback and willing to try new approaches, which helped him
+                grow as a designer throughout his internship.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-cont">
+            <div class="testimonial-profile">
+              <div class="testimonial-profile_img">
+                <img src="images/ting.jpg" alt="Sharleen Yan - UX Designer" />
+              </div>
+              <div class="testimonial-profile_info">
+                <div class="testimonial-profile_info-cont">
+                  <p class="testimonial-name">Tina Lin</p>
+                  <p class="testimonial-role">
+                    Web Designer @ Stable Harvest Farms
+                  </p>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/tina-lin-000613b5/"
+                  target="_blank"
+                  class="testimonial-link"
+                  >Tina's LinkedIn<ion-icon
+                    name="arrow-forward-outline"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+
+            <div class="testimonial-text">
+              <p class="testimonial-h-quote">
+                Collaborating with Johann at Convergence gave me the chance to
+                see his growth firsthand.
+              </p>
+              <p class="testimonial-b-quote">
+                Johann consistently met deadlines, brought fresh ideas, and
+                demonstrated a strong talent for design. His work is modern,
+                thoughtfully executed, and shows a clear eye for user-friendly
+                and aesthetic layouts. He has great potential, and I’m confident
+                he will continue to grow into an excellent designer.
+              </p>
+              
+            </div>
+          </div>
         </div>
-
-        
       </div>
-
     </main>
+
+    <footer>
+
+      <div class="footer-cont">
+
+        <div class="footer-time">Vancouver, <span id="footer-time">--:--</span></div>
+
+        <div class="footer-bottom">
+             
+            <p>Get in touch at: <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a></p>
+
+            <p>Let's Work Together!</p>
+
+            <ul class="footer-links-nav">
+                <li><a href="/JohannChua_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/jso-c" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.are.na/your-handle" target="_blank" rel="noopener noreferrer">Are.na</a></li>
+            </ul>
+        </div> 
+        </div>
+    </footer>
 
     <!-- IONICONS -->
     <script
@@ -308,6 +406,25 @@
 
     <!-- Script Files -->
     <script src="js/newmenu.js"></script>
+
+    <script>
+  const timeEl = document.getElementById("footer-time");
+
+  function updateTime() {
+    const options = {
+      timeZone: "America/Vancouver",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false
+    };
+    const formatter = new Intl.DateTimeFormat("en-CA", options);
+    timeEl.textContent = formatter.format(new Date());
+  }
+
+  updateTime();               
+  setInterval(updateTime, 1000); 
+</script>
     <!-- <script src="js/scrolldownicon.js"></script>
     <script src="js/textanimation.js"></script>
     <script src="js/resize-overlay.js"></script> -->
@@ -317,28 +434,7 @@
     <script>
       AOS.init();
 
-      // Script for changing delay data on homepage
-      // window.addEventListener('resize', checkScreenWidth);
-      // window.addEventListener('load', checkScreenWidth);
 
-      // Create the function to check if screen width is above 2560
-      // At min-width of 2560px, hero section vh changes, so to better match the animations of the staggering text, delay needs to be added
-      // function checkScreenWidth() {
-
-      //     const elements = document.querySelectorAll('[data-aos-delay]');
-      //     elements.forEach(element => {
-
-      //         if (window.innerWidth >= 2560) {
-
-      //             element.setAttribute('data-aos-delay', '2500');
-      //         } else {
-
-      //             element.setAttribute('data-aos-delay', '0');
-      //         }
-      //     });
-      // }
-
-      // checkScreenWidth();
     </script>
   </body>
 </html>

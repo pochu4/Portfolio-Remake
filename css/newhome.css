@@ -120,6 +120,71 @@
   border-radius: 2rem;
 }
 
+.testimonial-cont {
+ 
+}
+
+.testimonial-1-spacer {
+  margin-bottom: 3rem;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: top ;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.testimonial-profile_img {
+  width: 210px;
+  height:auto;
+  object-fit: fill;
+}
+
+.testimonial-profile_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-name {
+  font-size: 1.5rem;
+  font-family: var(--medium);
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  font-family: var(--book);
+  color: var(--gray);
+}
+
+.testimonial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between text and icon */
+  color: #000; /* adjust to match your design */
+  font-family: var(--book);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.testimonial-link:hover {
+  color: #0077b5; /* LinkedIn blue on hover */
+}
+
+.testimonial-h-quote {
+  font-size: 1.25rem;
+  font-family: var(--book);
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-b-quote {
+  font-size: 1rem;
+  font-family: var(--book);
+  color: var(--gray);
+  line-height: 1.5;
+}
+
 @media (min-width: 768px) {
   .hero-title {
     width: 80%;
