@@ -8,7 +8,7 @@ footer {
 .footer-time {
   font-size: 2rem;
   font-family: var(--medium);
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .footer-cont {
@@ -77,9 +77,11 @@ footer {
   .footer-bottom ul {
     grid-column: 7 / span 6; /* spans cols 7–12 */
   }
+
 }
 
 @media (min-width: 1536px) {
+ 
 }
 
 @media (min-width: 1920px) {

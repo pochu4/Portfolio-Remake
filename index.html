@@ -261,7 +261,7 @@
         </div>
 
         <div class="home-section_projects home-grid-content">
-          <h2>
+          <h2 class="home-info_h2">
             Before transitioning into design, I spent several years in the
             customer service industry. This experience sharpened my ability to
             understand people's needs, frustrations, and behaviours.
@@ -275,7 +275,7 @@
         </div>
       </div>
 
-      <div class="home-section section-spacer">
+      <div class="home-section section-spacer home-no-space">
         <div class="home-grid-title">
           <div class="grid-title_cont">
             <h3>Testimonials</h3>
@@ -283,7 +283,7 @@
           </div>
         </div>
 
-        <div class="home-section_projects home-grid-content">
+        <div class="home-section_projects home-grid-content testimonial-grid">
           <div class="testimonial-cont testimonial-1-spacer">
             <div class="testimonial-profile">
               <div class="testimonial-profile_img">
@@ -372,9 +372,9 @@
 
         <div class="footer-bottom">
              
-            <p>Get in touch at: <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a></p>
+            <p>Get in touch: <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a></p>
 
-            <p>Let's Work Together!</p>
+            <p>Let's work together!</p>
 
             <ul class="footer-links-nav">
                 <li><a href="/JohannChua_Resume.pdf" target="_blank">Resume</a></li>
@@ -407,27 +407,7 @@
     <!-- Script Files -->
     <script src="js/newmenu.js"></script>
 
-    <script>
-  const timeEl = document.getElementById("footer-time");
-
-  function updateTime() {
-    const options = {
-      timeZone: "America/Vancouver",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: false
-    };
-    const formatter = new Intl.DateTimeFormat("en-CA", options);
-    timeEl.textContent = formatter.format(new Date());
-  }
-
-  updateTime();               
-  setInterval(updateTime, 1000); 
-</script>
-    <!-- <script src="js/scrolldownicon.js"></script>
-    <script src="js/textanimation.js"></script>
-    <script src="js/resize-overlay.js"></script> -->
+    <script src="js/time.js"></script>
 
     <!-- AOS CDN - Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
