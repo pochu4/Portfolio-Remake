@@ -1,0 +1,83 @@
+    @import url(./styles.css);
+
+    .works-section1 {
+        margin: 0 1rem;
+        padding-top: 2rem;
+        ;
+    }
+
+    .works-section2 {
+        margin: 0 1rem;
+        padding: 2rem 0;
+    }
+
+
+
+    /* Filter Button */
+    .filter-button {
+        background-color: transparent;
+        border: 2px solid var(--midnight);
+        color: var(--midnight);
+        padding: 0.5rem 1.25rem;
+        border-radius: 2rem;
+        font-family: var(--book);
+        font-size: 1rem;
+        cursor: pointer;
+        transition:
+            background-color 0.2s,
+            color 0.2s,
+            border 0.2s;
+        outline: none;
+        margin-right: 0.5rem;
+    }
+
+    /* Active (selected) button */
+    .filter-button.active {
+        background-color: var(--midnight);
+
+        color: var(--beige)
+    }
+
+    /* Hover on unselected buttons */
+    .filter-button:not(.active):hover {
+        background-color: var(--midnight);
+        color: #fff;
+        /* or var(--beige) */
+        border: 2px solid var(--midnight);
+    }
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 1024px) {
+        .works-section1 {
+            margin: 0 1.rem;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .works-section2 {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* 2 per row at 768px */
+        .works-section2>.home-section_project {
+            grid-column: span 6;
+        }
+    }
+
+    @media (min-width: 1536px) {}
+
+    @media (min-width: 1920px) {
+        .works-section1 {
+            margin: 0 2.5rem;
+        }
+
+        .works-section2 {
+            margin: 0 2.5rem;
+            gap: 2rem;
+        }
+    }
+
+    @media (min-width: 2560px) {}
