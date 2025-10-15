@@ -65,7 +65,7 @@
     
 }
 
-.about-textcont {;
+.about-textcont {
     grid-column: 7 / span 5;
     margin-top: 0;
     gap: 1rem;
