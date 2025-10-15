@@ -67,7 +67,7 @@
     }
 
     .about-textcont {
-        ;
+        
         grid-column: 7 / span 5;
         margin-top: 0;
         gap: 1rem;
@@ -94,10 +94,12 @@
 
     .about-section1 {
         margin: 0 1.5rem;
+        gap: 1.5rem;
     }
 
     .about-section2 {
         margin: 0 1.5rem;
+        gap: 1.5rem;
     }
 
 }
@@ -114,7 +116,8 @@
 @media (min-width: 1536px) {
 
     .about-intro-grid {
-        grid-column: 1 / span 5;
+        grid-column: 1 / span 6;
+        text-wrap: balance;
     }
 }
 
@@ -122,10 +125,12 @@
 
     .about-section1 {
         margin: 0 2.5rem;
+        gap: 2.5rem;
     }
 
     .about-section2 {
         margin: 0 2.5rem;
+        gap: 2.5rem;
     }
 
 }

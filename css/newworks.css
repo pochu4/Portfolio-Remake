@@ -11,6 +11,18 @@
         padding: 2rem 0;
     }
 
+    .works-hero_intro-filter {
+        display: flex;
+        align-items: start;
+        margin-bottom: 1.5rem;
+    }
+    
+    .works-skillnumber {
+        font-size: 1rem;
+        margin-right: 1rem;
+        color: var(--gray);
+    }
+
 
 
     /* Filter Button */
@@ -50,15 +62,21 @@
 
     @media (min-width: 1024px) {
         .works-section1 {
-            margin: 0 1.rem;
+            margin: 0 1.5rem;
         }
+
+        .works-section2 {
+            margin: 0 1.5rem;
+            gap: 1.5rem;
+        }
+
     }
 
     @media (min-width: 1280px) {
         .works-section2 {
             display: grid;
             grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 1.5rem;
+            padding-bottom: 3rem;
         }
 
         /* 2 per row at 768px */
@@ -76,7 +94,7 @@
 
         .works-section2 {
             margin: 0 2.5rem;
-            gap: 2rem;
+            gap: 2.5rem;
         }
     }
 

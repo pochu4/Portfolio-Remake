@@ -244,11 +244,15 @@ header {
 @media (min-width: 1024px) {
   .header-container {
     padding: 1rem 1.5rem;
+    gap: 1.5rem;
   }
 }
 
 @media (min-width: 1920px) {
   .header-container {
     padding: 1.5rem 2.5rem;
+  }
+  .header-container {
+    gap: 2.5rem;
   }
 }
