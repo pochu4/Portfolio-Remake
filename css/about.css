@@ -1,8 +1,6 @@
 @import url(./styles.css);
 
-.about-intro {
-
-}
+.about-intro {}
 
 /* About Section 1 */
 .about-section1 {
@@ -16,6 +14,7 @@
 
 .about-skillset_container {
     width: 100%;
+    margin-top: 1.25rem;
 }
 
 .about-textcont {
@@ -34,7 +33,9 @@
 /* About Section 2 */
 .about-section2 {
     margin: 0 1rem;
-    padding: 2rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
 }
 
 .about-skillset_line {
@@ -47,40 +48,67 @@
 }
 
 .skillset-divider {
-    border-top: 1px solid var(--gray); 
+    border-top: 1px solid var(--gray);
     opacity: 0.8;
     margin: 1rem 0;
 }
 
 @media (min-width: 768px) {
 
-.about-section1 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 2rem 0;
-}
+    .about-section1 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 2rem 0;
+    }
 
-.about-imagecont {
-    grid-column: 1 / span 5;
-    
-}
+    .about-imagecont {
+        grid-column: 1 / span 5;
 
-.about-textcont {;
-    grid-column: 7 / span 5;
-    margin-top: 0;
-    gap: 1rem;
+    }
+
+    .about-textcont {
+        ;
+        grid-column: 7 / span 5;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    .about-section2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 2rem 0;
+    }
+
+    .about-s2_imagecont {
+        grid-column: 7 / span 6;
+    }
+
+    .about-s2_textcont {
+        grid-column: 1 / span 5;
+        margin-top: 0;
+        gap: 1rem;
+    }
 }
 
 @media (min-width: 1024px) {
 
-  .about-section1 {
-    margin: 0 1.5rem;
-  }
+    .about-section1 {
+        margin: 0 1.5rem;
+    }
+
+    .about-section2 {
+        margin: 0 1.5rem;
+    }
 
 }
 
 @media (min-width: 1280px) {
-
+    .about-skillset_container {
+        margin-top: 0rem;
+    }
+    .about-nospace {
+        padding: 0;
+    }
 }
 
 @media (min-width: 1536px) {
@@ -88,12 +116,16 @@
     .about-intro-grid {
         grid-column: 1 / span 5;
     }
-}   
+}
 
 @media (min-width: 1920px) {
 
-.about-section1 {
-    margin: 0 2.5rem;
-  }
+    .about-section1 {
+        margin: 0 2.5rem;
+    }
+
+    .about-section2 {
+        margin: 0 2.5rem;
+    }
 
 }

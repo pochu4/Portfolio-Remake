@@ -105,7 +105,7 @@ function trapKeydown(e) {
       closeMenu();
   });
 
-  // 3) live time (optional)
+  // 3) live time
   const headerTime = document.getElementById("time");
   const menuTime = document.getElementById("menuTime");
   const pad = (n) => String(n).padStart(2, "0");
@@ -114,7 +114,7 @@ function trapKeydown(e) {
     const hh = pad(now.getHours()),
       mm = pad(now.getMinutes()),
       ss = pad(now.getSeconds());
-    if (headerTime) headerTime.textContent = `${hh}:${mm}`;
+    if (headerTime) headerTime.textContent = `${hh}:${mm}:${ss}`;
     if (menuTime) menuTime.textContent = `${hh}:${mm}:${ss}`;
   }
   tick();
