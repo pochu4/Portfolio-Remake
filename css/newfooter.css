@@ -1,31 +1,38 @@
 @import url(styles.css);
 
 footer {
-  background-color: var(--black);
-  padding: 1rem;
+  /* background-color: var(--black); */
+  padding: 1rem 0rem;
+  margin: 0rem 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--gray) 50%, transparent);
 }
 
-.footer-time {
+/* .footer-time {
   font-size: 2rem;
   font-family: var(--medium);
   margin-bottom: 8rem;
-}
+} */
 
 .footer-cont {
   color: var(--beige);
   font-family: var(--book);
 }
 
+
 .footer-bottom a {
-  color: var(--beige);
+  color: var(--gray);
   font-family: var(--book);
   font-size: 1rem;
   text-underline-offset: 4px;
   text-decoration-thickness: 1.5px;
 }
 
+.footer-bottom a:hover {
+  color: var(--midnight-light);
+}
+
 .footer-cont p {
-  color: var(--beige);
+  color: var(--gray);
   font-family: var(--book);
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -37,13 +44,18 @@ footer {
 }
 
 .footer-links-nav li a {
-  color: var(--beige);
+  color: var(--gray);
   text-decoration: none;
   font-size: 1rem;
 }
 
+.footer-links-nav li a:hover {
+  color: var(--midnight-light);
+}
+
 .footer-links-nav li::after {
   content: ",";
+  color: var(--gray);
   margin-right: 0.25rem;
 }
 
@@ -52,7 +64,8 @@ footer {
 
 @media (min-width: 1024px) {
   footer {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
+    margin: 0 1.5rem;
   }
 }
 
@@ -60,6 +73,7 @@ footer {
   .footer-bottom {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
   }
 
   .footer-bottom p {
@@ -86,7 +100,8 @@ footer {
 
 @media (min-width: 1920px) {
   footer {
-    padding: 1rem 2.5rem;
+    padding: 1rem 0;
+    margin: 0 2.5rem;
   }
   .footer-bottom {
     gap: 2.5rem;

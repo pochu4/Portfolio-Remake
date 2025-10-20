@@ -170,7 +170,7 @@
 }
 
 .testimonial-link:hover {
-  color: #0077b5; /* LinkedIn blue on hover */
+  color: var(--midnight-light); 
 }
 
 .testimonial-h-quote {
@@ -276,6 +276,7 @@
   .hero-section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
     padding-top: 1rem;
   }
 
@@ -289,6 +290,7 @@
     display: grid;
     padding-bottom: 3rem;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
   }
 
   .home-grid-title {
@@ -432,6 +434,7 @@
 @media (min-width: 1920px) {
   .hero-section {
     margin: 1rem 2.5rem;
+    gap: 2.5rem;
   
   }
 
@@ -442,6 +445,7 @@
   .home-section {
     margin: 3rem 2.5rem;
     padding-bottom: 3rem;
+    gap: 2.5rem;
   }
 
   .home-projectinfo-l3 button {

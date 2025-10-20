@@ -11,9 +11,10 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/newhome.css">
+    <link rel="stylesheet" href="css/newheader.css">
+    <link rel="stylesheet" href="css/newfooter.css">
+    <link rel="stylesheet" href="css/newworks.css">
     <link rel="stylesheet" href="css/projectpage.css">
 
     <!-- Favicon -->
@@ -79,36 +80,57 @@
 </head>
 
 <body>
-    <header class="main-tool-bar">
-        <div class="logo">
-            <a href="index.html"><p class="nav-name">Johann Chua</p></a>
-        </div>
-        <div class="toggle-btn">
-            <button class="burger" onclick="this.classList.toggle('active');"></button>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Johann Chua</h2>
+                </a>
+            </div>
+
+            <!-- Desktop time -->
+            <div class="time">Vancouver, <span id="time">--:--</span></div>
+
+            <!-- Desktop links -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Projects</a></li>
+                    <li>
+                        <a href="resume/Johann Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="burger menu-toggle" id="burger" aria-expanded="false" aria-controls="mobileMenu"
+                aria-label="Open menu">
+                Menu
+            </button>
         </div>
     </header>
 
-    <!-- Full Screened Menu -->
-    <div class="overlay2">
-        <nav class="overlay-menu">
-            <ul>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p><a href="index.html">Home</a></p>
+    <!-- Full-screen mobile menu -->
+    <div class="full-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="full-menu_container">
+            <div class="full-menu_content">
+                <div class="menu-time">
+                    Vancouver, <br /><span id="menuTime">--:--:--</span>
+                </div>
+                <div class="menu-nav-links">
+                    <div class="menu-nav-links">
+                        <a href="about.html" class="menu-nav-links_link">
+                            <span>About</span><ion-icon name="arrow-up"></ion-icon>
+                        </a>
+                        <a href="works.html" class="menu-nav-links_link">
+                            <span>Projects</span><ion-icon name="arrow-up"></ion-icon>
+                        </a>
+                        <a href="resume/Johann Resume.pdf" target="_blank" rel="noopener" class="menu-nav-links_link">
+                            <span>Resume</span><ion-icon name="arrow-up"></ion-icon>
+                        </a>
                     </div>
-                </li>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p><a href="works.html">Works</a></p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div class="menu-item-name">
-                        <p><a href="about.html">About</a></p>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -127,7 +149,7 @@
                     <div class="project-number">
                         <p class="pp-numbers">03</p>
                         <div class="numberline"></div>
-                        <p class="pp-numbers">05</p>
+                        <p class="pp-numbers">04</p>
                     </div>
 
                     <div class="project-link">
@@ -259,8 +281,7 @@
             <div class="ppsection-break pp-spacer"></div>
 
             <div class="pp-1image pp-spacer">
-                <img src="images/virtus/new/virtus-sg.png"
-                    alt="Virtus Project - Styleguide">
+                <img src="images/virtus/new/virtus-sg.png" alt="Virtus Project - Styleguide">
             </div>
 
             <div class="pp-section pp-spacer">
@@ -282,8 +303,7 @@
             <div class="ppsection-break pp-spacer"></div>
 
             <div class="pp-1image pp-spacer">
-                <img src="images/virtus/new/virtushifi.png"
-                    alt="Virtus Project - High fidelity wireframing">
+                <img src="images/virtus/new/virtushifi.png" alt="Virtus Project - High fidelity wireframing">
             </div>
 
             <div class="pp-section pp-spacer">
@@ -409,7 +429,7 @@
                         </a>
                     </div>
 
-                   
+
                     <div class="moreprojects-card">
                         <a href="roam.html">
                             <div class="mp-card-wrapper">
@@ -441,59 +461,26 @@
 
     </main>
 
-    <footer>
-        <div class="component">
-            <div class="component-container" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out">
-                <div class="component-title">
-                    <h3>Let's Work Together</h3>
-                    <ion-icon name="ellipse"></ion-icon>
-                </div>
-            </div>
-            <div class="component-content footer-content" data-aos="fade-up" data-aos-duration="500"
-                data-aos-easing="ease-out">
-                <div class="email-container">
-                    <a href="mailto:hello@johannchua.com">
-                        <h3>hello@johannchua.com</h3>
-                    </a>
-                    <div class="hero-divider"></div>
-                    <p class="email-tagline">For more info feel free to reach out!</h3>
-                </div>
+     <footer>
+        <div class="footer-cont">
 
-                <div class="socials-container">
-                    
-                    <div class="social-link">
-                        <a href="resume/Johann Resume.pdf" target="_blank">
-                            <p>Resume</p>
-                            <ion-icon name="arrow-up"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="social-link">
-                        <a href="https://www.linkedin.com/in/johann-chua/">
-                            <p>LinkedIn</p>
-                            <ion-icon name="arrow-up"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="social-link">
-                        <a href="https://github.com/pochu4">
-                            <p>GitHub</p>
-                            <ion-icon name="arrow-up"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="hero-divider"></div>
-                    <div class="social-link">
-                        <a href="https://www.are.na/po-chu/channels">
-                            <p>Are.na</p>
-                            <ion-icon name="arrow-up"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="hero-divider"></div>
-                </div>
+            <!-- <div class="footer-time">Vancouver, <span id="footer-time">--:--</span></div> -->
 
-                <div class="footer-closingtag">
-                    <p>Designed & Developed by Johann Chua</p>
-                </div>
+            <div class="footer-bottom">
+
+                <p>Get in touch: <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a></p>
+
+                <p>Let's work together!</p>
+
+                <ul class="footer-links-nav">
+                    <li><a href="/JohannChua_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/jso-c" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/yourhandle" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.are.na/your-handle" target="_blank" rel="noopener noreferrer">Are.na</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -509,9 +496,8 @@
     <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
 
     <!-- Script Files -->
-    <script src="js/fsmenu.js"></script>
+    <script src="js/newmenu.js"></script>
     <script src="js/resize-overlay.js"></script>
-    <!-- <script src="js/scrolldownicon.js"></script> -->
 </body>
 
 </html>
