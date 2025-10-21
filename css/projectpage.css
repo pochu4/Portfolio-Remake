@@ -448,6 +448,10 @@
 
     /* Sections */
 
+    .moreprojects_section {
+        padding-bottom: 0rem;
+    }
+
     .pp-section {
         display: flex;
         /* Ensure it applies */
