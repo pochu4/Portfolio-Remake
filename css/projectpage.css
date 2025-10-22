@@ -60,7 +60,6 @@
 /* Hero Section! */
 
 .pp-hero {
-    padding-top: 4.5rem;
     margin: 0 1rem;
 }
 
@@ -442,12 +441,16 @@
     }
 
     .pp-large {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 
 
 
     /* Sections */
+
+    .moreprojects_section {
+        padding-bottom: 0rem;
+    }
 
     .pp-section {
         display: flex;
@@ -519,9 +522,6 @@
         font-size: 16px;
     }
 
-    .pp-large {
-        font-size: 3.5rem;
-    }
 
     .pp-section {
         gap: 2.5rem;
