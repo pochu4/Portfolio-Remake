@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johann Chua</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Johann Chua</title>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/newhome.css" />
+    <link rel="stylesheet" href="css/newheader.css" />
+    <link rel="stylesheet" href="css/newfooter.css" />
+    <link rel="stylesheet" href="css/newworks.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/newhome.css">
-  <link rel="stylesheet" href="css/newheader.css" />
-  <link rel="stylesheet" href="css/newfooter.css">
-  <link rel="stylesheet" href="css/newworks.css">
-  <link rel="stylesheet" href="css/about.css" />
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/logos/SubmarkTest.svg" type="image/svg+xml" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/logos/SubmarkTest.svg" type="image/svg+xml" />
+    <!-- Meta Tags ! -->
+    <meta
+      name="description"
+      content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC"
+    />
+    <meta name="author" content="Johann Chua" />
+    <meta
+      name="keywords"
+      content="Johann Chua, Digital Identity, Product Designer, Portfolio, Web Development, User Experience Designer, User Interface Designer"
+    />
 
-  <!-- Meta Tags ! -->
-  <meta name="description" content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC" />
-  <meta name="author" content="Johann Chua" />
-  <meta name="keywords"
-    content="Johann Chua, Digital Identity, Product Designer, Portfolio, Web Development, User Experience Designer, User Interface Designer" />
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Robots Meta Tag -->
-  <meta name="robots" content="index, follow" />
+    <!-- OpenGraph Protocol Meta -->
+    <meta property="og:title" content="Johann Chua" />
+    <meta
+      property="og:description"
+      content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC"
+    />
+    <meta property="og:url" content="https://www.johannchua.com/" />
+    <meta
+      property="og:image"
+      content="https://www.johannchua.com/images/Submark.svg"
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- OpenGraph Protocol Meta -->
-  <meta property="og:title" content="Johann Chua" />
-  <meta property="og:description"
-    content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC" />
-  <meta property="og:url" content="https://www.johannchua.com/" />
-  <meta property="og:image" content="https://www.johannchua.com/images/Submark.svg" />
-  <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Johann Chua" />
+    <meta
+      name="twitter:description"
+      content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.johannchua.com/images/Submark.svg"
+    />
+    <meta name="twitter:url" content="https://www.johannchua.com/" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Johann Chua" />
-  <meta name="twitter:description"
-    content="More about Johann Chua, A passionate Digital Designer based in Vancouver, BC" />
-  <meta name="twitter:image" content="https://www.johannchua.com/images/Submark.svg" />
-  <meta name="twitter:url" content="https://www.johannchua.com/" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
       {
           "@context": "https://schema.org/",
           "@type": "Person",
@@ -78,221 +95,263 @@
         },
       }
     </script>
-</head>
+  </head>
 
-<body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-          <h2>Johann Chua</h2>
-        </a>
-      </div>
-
-      <!-- Desktop time -->
-      <div class="time">Vancouver, <span id="time">--:--</span></div>
-
-      <!-- Desktop links -->
-      <div class="nav-links">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="works.html">Projects</a></li>
-          <li>
-            <a href="resume/Johann Resume.pdf" target="_blank" rel="noopener">Resume</a>
-          </li>
-        </ul>
-      </div>
-
-      <button class="burger menu-toggle" id="burger" aria-expanded="false" aria-controls="mobileMenu"
-        aria-label="Open menu">
-        Menu
-      </button>
-    </div>
-  </header>
-
-  <!-- Full-screen mobile menu -->
-  <div class="full-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="full-menu_container">
-      <div class="full-menu_content">
-        <div class="menu-time">
-          Vancouver, <br /><span id="menuTime">--:--:--</span>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <h2>Johann Chua</h2>
+          </a>
         </div>
-        <div class="menu-nav-links">
+
+        <!-- Desktop time -->
+        <div class="time">Vancouver, <span id="time">--:--</span></div>
+
+        <!-- Desktop links -->
+        <div class="nav-links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Projects</a></li>
+            <li>
+              <a href="resume/Johann-Resume.pdf" target="_blank" rel="noopener"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="burger menu-toggle"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <!-- Full-screen mobile menu -->
+    <div
+      class="full-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="full-menu_container">
+        <div class="full-menu_content">
+          <div class="menu-time">
+            Vancouver, <br /><span id="menuTime">--:--:--</span>
+          </div>
           <div class="menu-nav-links">
-            <a href="about.html" class="menu-nav-links_link">
-              <span>About</span><ion-icon name="arrow-up"></ion-icon>
-            </a>
-            <a href="works.html" class="menu-nav-links_link">
-              <span>Projects</span><ion-icon name="arrow-up"></ion-icon>
-            </a>
-            <a href="resume/Johann Resume.pdf" target="_blank" rel="noopener" class="menu-nav-links_link">
-              <span>Resume</span><ion-icon name="arrow-up"></ion-icon>
-            </a>
+            <div class="menu-nav-links">
+              <a href="about.html" class="menu-nav-links_link">
+                <span>About</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+              <a href="works.html" class="menu-nav-links_link">
+                <span>Projects</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+              <a
+                href="resume/Johann-Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                class="menu-nav-links_link"
+              >
+                <span>Resume</span><ion-icon name="arrow-up"></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <main>
-    <section class="hero-section">
-      <div class="hero-section-grid about-intro-grid">
-        <div class="hero-title">
-          <h1>About Me</h1>
+    <main>
+      <section class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-section-grid about-intro-grid">
+          <div class="hero-title">
+            <h1>About Me</h1>
+          </div>
+          <div class="hero-intro">
+            <p>
+              Hello again — I’m Johann, a digital designer based in Vancouver
+              with a background in UX/UI, digital marketing, and front-end
+              development.
+            </p>
+          </div>
         </div>
-        <div class="hero-intro">
-          <p>
-            Hello again — I’m Johann, a digital designer based in Vancouver
-            with a background in UX/UI, digital marketing, and front-end
-            development.
+      </section>
+
+      <div class="about-section1" data-aos="fade-up" data-aos-duration="1000">
+        <div class="about-imagecont">
+          <img src="images/aboutpage/johann.jpg" alt="Johann Chua" />
+        </div>
+        <div class="about-textcont">
+          <p class="about-header-sty">My Path So Far</p>
+          <p class="about-text-sty">
+            Right now, I’m freelancing on an eCommerce and branding project,
+            helping a small business bring their online presence to life. I’m
+            also exploring opportunities in UX/UI, product design, and digital
+            marketing, where I can bring together creativity, problem-solving,
+            and strategy to craft experiences that feel thoughtful and
+            intuitive.
+          </p>
+          <p class="about-text-sty">
+            I studied New Media Design & Web Development at BCIT, where I
+            learned to connect design and code through hands-on projects that
+            combined UX strategy, UI design, and front-end development. Before
+            that, I completed the Marketing Management – Communications program,
+            which built my foundation in storytelling, brand positioning, and
+            understanding audiences. All of these experiences now shape how I
+            approach design.
+          </p>
+          <p class="about-text-sty">
+            Recently, I've also done some work as a Design & Web Development
+            Intern at Convergence / Pixel Ramen, a design and dev agency based
+            in Vancouver. I contributed to branding, visual content, and web
+            builds, while also supporting QA and front-end development for live
+            client projects.
           </p>
         </div>
       </div>
-    </section>
 
-    <div class="about-section1">
-      <div class="about-imagecont">
-        <img src="images/aboutpage/trnto.jpg" alt="Johann Chua" />
-      </div>
-      <div class="about-textcont">
-        <p class="about-header-sty">
-          My Path So Far
-        </p>
-        <p class="about-text-sty">
-          Right now, I’m freelancing on an eCommerce and branding project, helping a small business bring their online
-          presence to life. I’m also on the lookout for opportunities in UX/UI, product design, and digital marketing —
-          spaces where I can combine creativity, problem-solving, and strategy to build experiences that feel both
-          thoughtful and intuitive.
-        </p>
-        <p class="about-text-sty">
-          I studied New Media Design & Web Development at BCIT, where I learned to bridge design and code through
-          projects that blended UX strategy, UI design, and front-end development. I also completed the Marketing
-          Management – Communications program, giving me a strong foundation in storytelling, brand positioning, and
-          understanding audiences — skills that now guide my approach to design.
-        </p>
-        <p class="about-text-sty">
-          Recently, I've also done some work as a Design & Web Development Intern at Convergence / Pixel Ramen, a design
-          and dev
-          agency based in Vancouver. I contributed to branding, visual content, and web builds, while also supporting QA
-          and front-end development for live client projects.
-        </p>
-      </div>
-    </div>
+      <div
+        class="home-section section-spacer home-no-space about-nospace"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="home-grid-title">
+          <div class="grid-title_cont">
+            <h3>Skillset</h3>
+            <ion-icon name="ellipse"></ion-icon>
+          </div>
+        </div>
 
-    <div class="home-section section-spacer home-no-space about-nospace">
-      <div class="home-grid-title">
-        <div class="grid-title_cont">
-          <h3>Skillset</h3>
-          <ion-icon name="ellipse"></ion-icon>
+        <div
+          class="home-section_projects home-grid-content about-skillset-grid"
+        >
+          <div class="about-skillset_container">
+            <div class="about-skillset_line">
+              <p class="skillnumber">(01)</p>
+              <h2>UX Research & Strategy</h2>
+            </div>
+            <div class="skillset-divider"></div>
+            <div class="about-skillset_line">
+              <p class="skillnumber">(02)</p>
+              <h2>UI & Interaction Design</h2>
+            </div>
+            <div class="skillset-divider"></div>
+            <div class="about-skillset_line">
+              <p class="skillnumber">(03)</p>
+              <h2>Front-End Development</h2>
+            </div>
+            <div class="skillset-divider"></div>
+            <div class="about-skillset_line">
+              <p class="skillnumber">(04)</p>
+              <h2>Brand & Visual Design</h2>
+            </div>
+            <div class="skillset-divider"></div>
+            <div class="about-skillset_line">
+              <p class="skillnumber">(05)</p>
+              <h2>Digital Marketing & Content</h2>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="home-section_projects home-grid-content about-skillset-grid">
-        <div class="about-skillset_container">
-          <div class="about-skillset_line">
-            <p class="skillnumber">(01)</p>
-            <h2>UX Research & Strategy</h2>
-          </div>
-          <div class="skillset-divider"></div>
-          <div class="about-skillset_line">
-            <p class="skillnumber">(02)</p>
-            <h2>UI & Interaction Design</h2>
-          </div>
-          <div class="skillset-divider"></div>
-          <div class="about-skillset_line">
-            <p class="skillnumber">(03)</p>
-            <h2>Front-End Development</h2>
-          </div>
-          <div class="skillset-divider"></div>
-          <div class="about-skillset_line">
-            <p class="skillnumber">(04)</p>
-            <h2>Brand & Visual Design</h2>
-          </div>
-          <div class="skillset-divider"></div>
-          <div class="about-skillset_line">
-            <p class="skillnumber">(05)</p>
-            <h2>Digital Marketing & Content</h2>
-          </div>
-          <div class="skillset-divider"></div>
+      <div class="about-section2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="about-textcont about-s2_textcont">
+          <p class="about-header-sty">What Keeps Me Going</p>
+          <p class="about-text-sty">
+            Growing up, I was always drawn to different creative outlets whether
+            it be architecture, photography, fashion, etc. My diverse
+            appreciation for all these mediums serves as my sources of
+            inspiration in my design workflow.
+          </p>
+          <p class="about-text-sty">
+            When I'm not behind the screen, you'll probably find me at a driving
+            range working on my swing or getting a workout in at the gym! As I
+            continue to grow as a designer, I hope to explore different areas
+            like print and typography design.
+          </p>
+        </div>
+
+        <div class="about-s2_imagecont">
+          <img src="images/aboutpage/maca2.jpg" alt="Johann golfing!" />
         </div>
       </div>
+    </main>
 
-    </div>
-
-    <div class="about-section2">
-
-      <div class="about-textcont about-s2_textcont">
-        <p class="about-header-sty">
-          What Keeps Me Going
-        </p>
-        <p class="about-text-sty">Growing up, I was always drawn to different creative outlets whether it be
-          architecture, photography, fashion, etc. My diverse appreciation for all these mediums serves as my sources of
-          inspiration in my design workflow.</p>
-        <p class="about-text-sty">When I'm not behind the screen, you'll probably find me at a driving range working on
-          my swing or getting a workout in at the gym! As I continue to grow as a designer, I hope to explore different
-          areas like print and typography design.</p>
+    <footer>
+      <div class="footer-cont">
+        <div class="footer-bottom">
+          <p>
+            Get in touch:
+            <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a>
+          </p>
+          <p>Let's work together!</p>
+          <ul class="footer-links-nav">
+            <li>
+              <a href="resume/Johann-Resume.pdf" target="_blank" rel="noopener"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jso-c"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/pochu4"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.are.na/po-chu/channels"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Are.na</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
+    </footer>
 
-      <div class="about-s2_imagecont">
-        <img src="images/aboutpage/jpan.jpg" alt="">
-      </div>
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-    </div>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
-  </main>
+    <!-- CSSRULEPlugin -->
+    <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
 
-  <footer>
-    <div class="footer-cont">
-      <div class="footer-bottom">
-        <p>Get in touch: <a href="mailto:chua.johann01@gmail.com">chua.johann01@gmail.com</a></p>
-        <p>Let's work together!</p>
-        <ul class="footer-links-nav">
-          <li><a href="/JohannChua_Resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="https://www.linkedin.com/in/jso-c" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/pochu4" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.are.na/po-chu/channels" target="_blank" rel="noopener noreferrer">Are.na</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    <script src="js/resize-overlay.js"></script>
+    <script src="js/newmenu.js"></script>
 
-  <!-- IONICONS -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-  <!-- GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-
-  <!-- CSSRULEPlugin -->
-  <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
-
-  <script src="js/resize-overlay.js"></script>
-  <script src="js/newmenu.js"></script>
-
-  <!-- AOS CDN - Script -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module">
-
-        const swiper = new Swiper('.about-background_swiper', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            slidesPerView: 1,
-            spaceBetween: 10,
-        });
-    </script> -->
-</body>
-
+    <!-- AOS CDN - Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

@@ -441,7 +441,7 @@
     }
 
     .pp-large {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 
 
@@ -522,9 +522,6 @@
         font-size: 16px;
     }
 
-    .pp-large {
-        font-size: 3.5rem;
-    }
 
     .pp-section {
         gap: 2.5rem;

@@ -302,7 +302,7 @@
   }
   .home-section_cta {
     grid-column: 4 / span 9;
-    margin-top: 3rem;
+    margin-top: 2rem;
     justify-content: start;
   }
 
